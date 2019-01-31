@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+  <meta charset="utf-8">
+  <title>HTML Academy: Техномарт</title>
 </head>
   
 <body>
 
+<!-- Header -->
 <header class="main-header">
-  <section class="top">
-    <a class="main-header-logo" href="#">
-      <img src="#"  alt="Логотип">
-    </a>
+  <section class="header-top">
+    <div class="logo">
+       <a href="#">Техномарт</a>
+    </div>
     <p>Поиск</p>
     <p>Закладки</p>
     <p>Корзина</p>
@@ -29,21 +30,21 @@
     </ul>
   </section>
         
-  <section class="nav">
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
-  </section>
+  <nav class="main-navigation">
+    <ul class="site-navigation">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Компания</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Спецпредложения</a></li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>  
 </header>
-      
+<!-- Header [END] -->
+     
+<!-- Main -->      
 <main>
  <!-- Здесь будет промо-блок, популярные товары, популярные бренды и сервисы-->
         
@@ -70,16 +71,24 @@
     <a class="button" href="#">Заблудились? Напишите нам!</a>            
   </section>
         
-</main>    
+</main>  
+<!-- Main [END] --> 
     
-<footer class="main-footer">
+<!-- Footer -->    
+<footer>
+  <div class="top-footer">
+    <div class="logo">
+       <a href="#">Техномарт</a>
+    </div>
   <ul>
     <li><a href="#">Компания</a></li>
     <li><a href="#">Новости</a></li>
     <li><a href="catalog.html">Каталог</a></li>            
     <li><a href="#">Доставка</a></li>
     <li><a href="#">Контакты</a></li>
-  </ul>        
+  </ul> 
+  </div>
+  <div class="middle-footer">       
   <p class="footer-contacts">
     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
     +7 (812) 555-05-55<br>
@@ -89,8 +98,9 @@
     <li><a href="#">Техника</a></li>
     <li><a href="#">Инструмент</a></li>
     <li><a href="#">Спецпредложения</a></li>
-  </ul>        
-  <section class="bottom">
+  </ul> 
+  </div>       
+  <div class="bottom-footer">
     <p class="copyright">
       © 2010–2019 Компания «Техномарт»<br>
       Все права защищены</p>
@@ -112,20 +122,22 @@
       <b>Разработано:</b> 
       <a href="https://htmlacademy.ru">htmlacademy.ru</a>
     </p>
-  </section>
-</footer>       
+  </div>
+</footer>  
+<!-- Footer [END] -->     
        
-    <!-- Модальные окна -->
-    <section class="modal write-us">      
-      <!-- Здесь будет форма -->
-      <a class="button">Отправить</a>
-      <span class="modal-close">x</span>
-    </section>
-    
-    <section class="modal modal-map">
-      <!-- Здесь будет карта -->
-      <span class="modal-close">x</span>
-    </section>        
+<!-- Write us -->
+<section class="modal write-us">      
+  <a class="button">Отправить</a>
+  <span class="modal-close">x</span>
+</section>
+<!-- Write us [END] -->
+   
+<!-- Map popup -->    
+<section class="modal modal-map">
+  <span class="modal-close">x</span>
+</section> 
+<!-- Map popup [END] -->       
         
 </body>
 </html>
