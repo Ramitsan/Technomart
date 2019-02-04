@@ -8,39 +8,68 @@
 <body>
  
 <!-- Header -->
-<header class="main-header">      
+<header class="header">
   <section class="header-top">
-    <div class="logo">
-       <a href="#">Техномарт</a>
+    <div class="container">
+      <div class="header-logo">
+        <a href="#" class="logo-link">ТЕХНОМАРТ</a>
+      </div>
+      <form action="index.html" method="GET" class="header-form">
+        <label class="visually-hidden" for="search">
+          <img src="img/icon-search.svg" width="17" height="17" alt="Поиск">
+          Поиск<input type="search" value="Поиск:" id="search" class="form-control">
+        </label>
+      </form>
+
+      <div class="widget">
+        <div class="widget-item">
+          <img src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки">
+          <span class="widget-info">Закладки: 0</span>            
+        </div>    
+        <div class="widget-item">
+          <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+          <span class="widget-info">Корзина: 10</span>            
+        </div> 
+      </div>
+      <button class="btn btn-order">Оформить заказ</button>
     </div>
-    <p>Поиск</p>
-    <p>Закладки</p>
-    <p>Корзина</p>
-    <p>Оформить заказ</p>
   </section>
         
-  <section>
-    <h1>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
-    <p>+7 (812) 555-05-55</p>
-    <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>   
-    <ul>
-      <li><a href="#">Равшан Джамшутович</a></li>
-      <li><a href="#">Мои заказы</a></li>
-      <li><a href="#">Личный кабинет</a></li>
-    </ul>
+  <section class="header-middle">
+    <div class="container">
+      <h1 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1> 
+      <div class="header-contacts"> 
+        <address class="header-address"> 
+          <a href="tel:+78125550555" class="header-phone">
+            <img src="img/icon-phone.svg" width="19" height="19" alt="Телефон"> +7 (812) 555-05-55
+          </a>
+          <p class="header-street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>          
+        </address>         
+      </div>       
+      <div class="user-navigation">
+        <a href="#" class="btn auth-link">
+          <img src="img/icon-user.svg" width="20" height="18" alt="Аватар">Равшан Джамшутович
+          <img src="img/icon-logout.svg" width="21px" height="17px" alt="Выйти">
+        </a>        
+      </div>
+    </div>
   </section>
-        
-  <nav class="main-navigation">
-    <ul class="site-navigation">
-      <li><a href="#">Главная</a></li>
-      <li><a href="#">Компания</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="#">Новости</a></li>
-      <li><a href="#">Спецпредложения</a></li>
-      <li><a href="#">Доставка</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-  </nav>
+   
+  <section class="header-nav"> 
+    <div class="container">    
+      <nav class="nav">
+        <ul class="navbar">
+          <li class="navbar-item"><a href="#">Главная</a></li>
+          <li class="navbar-item"><a href="#">Компания</a></li>
+          <li class="navbar-item"><a href="catalog.html">Каталог</a></li>
+          <li class="navbar-item"><a href="#">Новости</a></li>
+          <li class="navbar-item"><a href="#">Спецпредложения</a></li>
+          <li class="navbar-item"><a href="#">Доставка</a></li>
+          <li class="navbar-item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>  
+    </div>
+  </section>
 </header>
 <!-- Header [END] -->
    
@@ -55,10 +84,40 @@
     <li><a href="#">Перфораторы</a></li>
   </ul>
       
-  <h1>Перфораторы</h1>
+  <h2>Перфораторы</h2>
   <section class="filter">
      <h2>Фильтр</h2>
-        <!-- Здесь будет форма-->
+       <form action="" method="GET">
+         <p>ФИЛЬТР:</p>
+         <p>СОРТИРОВКА:</p>
+         <a href="#">ПО ЦЕНЕ</a>
+         <a href="#">ПО ТИПУ</a>
+         <a href="#">ПО ФУНКЦИОНАЛУ</a>
+         <img src="img/icon-up-dir.svg" width="11" height="10" alt="Сортировка по возрастанию">
+         <img src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по убыванию">   
+
+         <h3>ЦЕНА:</h3> 
+         <!-- Диапазон цен -->
+
+         <h3>ПРОИЗВОДИТЕЛИ:</h3>
+         <input type="checkbox" id="bosch" name="bosch" checked>
+         <label for="bosch">BOSCH</label> <br>
+         <input type="checkbox" id="interskol" name="interskol">
+         <label for="interskol">ИНТЕРСКОЛ</label> <br>
+         <input type="checkbox" id="makita" name="makita" checked>
+         <label for="makita">MAKITA</label> <br>
+         <input type="checkbox" id="dewalt" name="dewalt">
+         <label for="dewalt">DEWALT</label> <br>
+         <input type="checkbox" id="hitachi" name="hitachi">
+         <label for="hitachi">HITACHI</label> <br>
+
+         <h3>ПИТАНИЕ:</h3>          
+         <input type="radio" id="battery" name="power" value="1" checked>
+         <label>АККУМУЛЯТОРНЫЕ</label><br>           
+         <input type="radio" id="nerwork" name="power" value="2">
+         <label>СЕТЕВЫЕ</label><br>
+         <button type="submit">ПОКАЗАТЬ</button>
+       </form>
   </section>
        
   <section class="catalog">
@@ -125,8 +184,7 @@
          <a href=""><img src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000"></a>
          <p class="price"></p>
          <p class="super-price">12500 Р.</p>
-       </li>
-            
+       </li>            
     </ul>
         
     <ul class="pagination">
@@ -146,62 +204,73 @@
 
 <!-- Footer -->    
 <footer>
-  <div class="top-footer">
-    <div class="logo">
-       <a href="#">Техномарт</a>
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-logo">
+        <a href="#" class="logo-link">ТЕХНОМАРТ</a>
+      </div>
+      <ul class="nav-footer">
+        <li class="navbar-item"><a href="#">Компания</a></li>
+        <li class="navbar-item"><a href="#">Новости</a></li>
+        <li class="navbar-item"><a href="catalog.html">Каталог</a></li>
+        <li class="navbar-item"><a href="#">Доставка</a></li>
+        <li class="navbar-item"><a href="#">Контакты</a></li>
+      </ul> 
+      <address class="footer-address">         
+        <p class="footer-street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
+        <a href="tel:+78125550555" class="footer-phone">
+          +7 (812) 555-05-55
+        </a>         
+      </address>         
+      <ul class="nav-footer-materials">
+        <li class="navbar-item"><a href="#">Материалы</a></li>
+        <li class="navbar-item"><a href="#">Техника</a></li>
+        <li class="navbar-item"><a href="#">Инструмент</a></li>
+        <li class="navbar-item"><a href="#">Спецпредложения</a></li>
+      </ul> 
     </div>
-    <ul>
-      <li><a href="#">Компания</a></li>
-      <li><a href="#">Новости</a></li>
-      <li><a href="catalog.html">Каталог</a></li>            
-      <li><a href="#">Доставка</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul> 
-  </div>
-  <div class="middle-footer">       
-  <p class="footer-contacts">
-    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-    +7 (812) 555-05-55<br>
-  </p>        
-  <ul>
-    <li><a href="#">Материалы</a></li>
-    <li><a href="#">Техника</a></li>
-    <li><a href="#">Инструмент</a></li>
-    <li><a href="#">Спецпредложения</a></li>
-  </ul> 
-  </div>       
-  <div class="bottom-footer">
-    <p class="copyright">
-      © 2010–2019 Компания «Техномарт»<br>
-      Все права защищены</p>
-                
-    <div class="footer-social">
-      <ul>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-      </ul>
+  </div>  
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-copyright">
+        &copy; 2010–2019 Компания &laquo;Техномарт&raquo;<br>
+        Все права защищены
+      </div>                
+      <ul class="footer-social">
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">Вконтакте</a></li>
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">Фейсбук</a></li>
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">Инстаграм</a></li>
+      </ul> 
+      <div class="footer-back-links">               
+        <p class="academy-mail">
+          Обратная связь:<br> 
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>            
+        <p class="academy-copyright">
+          Разработано -<br> 
+          <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+        </p>
+      </div> 
     </div>
-           
-    <p class="academy-mail">
-      <b>Обратная связь:</b> 
-      <a  href="#">mail@htmlacademy.ru</a>
-    </p>   
-           
-    <p class="academy-copyright">
-      <b>Разработано:</b> 
-      <a href="https://htmlacademy.ru">htmlacademy.ru</a>
-    </p>
   </div>
 </footer>  
-<!-- Footer [END] --> 
+<!-- Footer [END] -->  
  
 <!-- Cart+ --> 
-<section class="modal add-to-basket"> 
+<section class="modal add-to-basket">
+  <img src="img/form-1.svg" width="66" height="66"  alt="Товар добавлен в корзину">
   <h2>Товар добавлен в корзину!</h2>
-  <a class="button">Оформить заказ</a>
-  <a class="button">Продолжить покупки</a>
+  <a href="#" class="button">Оформить заказ</a>
+  <a href="#" class="button">Продолжить покупки</a>
   <span class="modal-close">x</span>
+  <img src="img/form-2.svg" width="21" height="21"  alt="Закрыть"> 
 </section>
 <!-- Cart+ [END] --> 
     
