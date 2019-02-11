@@ -1,0 +1,190 @@
+body {
+  margin: 0;	
+
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  background-color: #f4f7f9;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+ }
+.header-top {
+  background-color: #293449;
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff; 
+  width: 1280px;
+  min-height: 42px;
+}
+.header-logo {
+  width: 220px; 
+  height: 47px;
+}
+
+.header-middle {
+  min-height: 158px;
+}
+.header-title {
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+}
+.header-phone {
+  color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+  border: 3px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  padding-left: 12px;
+  padding-right: 49px;
+}
+.header-phone img {
+  padding-right: 41px;
+}
+.header-street {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+}
+.nav {	
+  font-size: 17px;
+  line-height: 17px;
+  color: #fff;
+
+  background-color: #32425c;
+  
+  min-height: 64px;  
+}
+.navbar .navbar-item {
+  padding-top: 22px;
+  padding-left: 51px;
+  padding-bottom: 26px;
+}
+
+.navbar .navbar-item a{
+  font-size: 17px;
+  line-height: 17px;
+  color: #fff;
+}
+.navbar .navbar-item a:hover {
+  background-color: #293449;
+}
+.navbar .navbar-item a:avtive {
+  background-color: #1d2739;
+}
+
+.widget {
+  display: inline-block;
+}
+
+.about h2,
+.contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase ;
+}
+.about p,
+.contacts p{
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+ }
+ .about ul {
+   list-style: none;
+ }
+ .transport-company {
+  font-size: 18px;
+  line-height: 20px;
+ }
+
+.footer {
+  background-color: #32425c;
+  color: #fff; 
+}
+
+.navbar,
+.nav-footer,
+.nav-footer-materials,
+.footer-social,
+.breadcrumbs {
+	list-style: none;
+}
+
+.navbar li,
+.nav-footer li,
+.nav-footer-materials li,
+.footer-social li,
+.breadcrumbs li {
+	display: inline;
+}
+.footer-address,
+.footer-phone,
+.nav-footer a  {
+    font-size: 18px;
+    line-height: 24px;
+    color: #f3f7f9; 
+}
+
+.nav-footer-materials a {
+	font-size: 18px;
+    line-height: 24px;
+    color: #ffd180;
+}
+
+.footer-bottom {
+	background-color: #293449;
+}
+.footer-back-links {
+	font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+}
+.footer-back-links a {
+	color: #ffd180;
+}
+
+
+.modal.write-us,
+.modal.modal-map,
+.modal.add-to-basket {
+	display: none;
+}
+
+.breadcrumbs li {
+	font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000;
+    text-transform: uppercase;
+}
+.tool-title {
+  width: 940px;
+  min-height: 89px;
+  margin: 0 auto;
+  background-color: #f2f6f8;
+}
+
+.tool-title h2 {
+	font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-top: 32px;
+    padding-left: 28px;
+    padding-bottom: 34px;
+}
+ .breadcrumbs { 	
+ 	padding: 0;
+ }
