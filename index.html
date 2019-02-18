@@ -15,46 +15,54 @@
   <header class="header">
     <div class="header-top">
       <div class="container">
-        <div class="header-logo">
-          <a href="#" class="logo-link">
-            <img src="img/logo-header.png" width="220" height="47" alt="Логотип">
-          </a>
-        </div>
-        <form action="index.html" method="GET" class="header-form">
-          <img src="img/icon-search.svg" width="17" height="17" alt="Поиск">
-          <label class="visually-hidden" for="search">Поиск</label>
-          <input class="form-search" type="search" value="Поиск:" id="search" placeholder="Поиск:">
-        </form>
-        <div class="widget">
-          <div class="widget-item">
-            <img src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки">
-            <span class="widget-info">Закладки: 0</span>
+        <div class="d-flex">
+          <div class="header-logo">
+            <a href="#" class="logo-link">
+              <img src="img/logo-header.png" width="220" height="47" alt="Логотип">
+            </a>
           </div>
-          <div class="widget-item">
-            <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
-            <span class="widget-info">Корзина: 0</span>
+          <div class="widgets">
+            <div class="search">
+              <form action="index.html" method="GET" class="header-form">
+                <!--<img src="img/icon-search.svg" width="17" height="17" alt="Поиск">-->
+                <label class="visually-hidden" for="search">Поиск</label>
+                <input class="form-search" type="search" value="Поиск:" id="search" placeholder="Поиск:">
+              </form>
+            </div>
+            <div class="bookmark">
+              <!--<img src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки">-->
+              <span class="widget-info">Закладки: 0</span>
+            </div>
+            <div class="widget-item">
+              <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+              <span class="widget-info">Корзина: 0</span>
+            </div>
+          </div>
+          <div>
+            <a class="button button-green">Оформить заказ</a>
           </div>
         </div>
-        <button class="btn btn-order">Оформить заказ</button>
       </div>
     </div>
     <div class="header-middle">
       <div class="container">
-        <div class="header-title">
-          <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        </div>
-        <div class="header-contacts">
-          <address class="header-address">
-            <a href="tel:+78125550555" class="header-phone">
-              <img src="img/icon-phone.svg" width="19" height="19" alt="Телефон"> +7 (812) 555-05-55
-            </a>
-            <p class="header-street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          </address>
-        </div>
-        <div class="user-navigation">
-          <a href="#" class="btn auth-link">
-            <img src="img/icon-login.svg" width="20" height="17" alt="Войти">Войти</a>
-          <a href="#" class="btn auth-link">Регистрация</a>
+        <div class="d-flex">
+          <div class="header-title">
+            <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+          </div>
+          <div class="header-contacts">
+            <address class="header-address">
+              <a href="tel:+78125550555" class="header-phone">
+                <img src="img/icon-phone.svg" width="19" height="19" alt="Телефон"> +7 (812) 555-05-55
+              </a>
+              <p class="header-street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </address>
+          </div>
+          <div class="user-navigation">
+            <a href="#" class="button button-white login-link">
+              <!--<img src="img/icon-login.svg" width="20" height="17" alt="Войти">-->Войти</a>
+            <a href="#" class="button button-white">Регистрация</a>
+          </div>
         </div>
       </div>
     </div>
@@ -117,26 +125,24 @@
           </div>
         </div>
         <section class="slider">
-          
-            <div class="slider-controls">
-              <button type="button" class="slider-button" alt="Влево"></button>
-              <button type="button" class="slider-button" alt="Вправо"></button>
-            </div>
-            <ul class="slider-items">
-              <li class="slider-item slide1">
-                <h3 class="slider-title">ПЕРФОРАТОРЫ</h3>
-                <p class="slider-text">Настоящие мужские игрушки</p>
-                <a class="button button-red slider-button" href="#">ОТКРЫТЬ КАТАЛОГ</a>
-                <img src="img/slider1.jpg" width="620" height="266" alt="Мужчина сверлит стену дрелью Bosch">
-              </li>
-              <li class="slider-item slide2">
-                <h3 class="slider-title">ДРЕЛИ</h3>
-                <p class="slider-text">Соседям на радость</p>
-                <a class="button button-red slider-button" href="#">ОТКРЫТЬ КАТАЛОГ</a>
-                <img src="img/slider2.jpg" width="620" height="266" alt="Другой мужчина сверлит стену дрелью Bosch">
-              </li>
-            </ul>
-          
+          <div class="slider-controls">
+            <button type="button" class="slider-button" alt="Влево"></button>
+            <button type="button" class="slider-button" alt="Вправо"></button>
+          </div>
+          <ul class="slider-items">
+            <li class="slider-item slide1">
+              <h3 class="slider-title">ПЕРФОРАТОРЫ</h3>
+              <p class="slider-text">Настоящие мужские игрушки</p>
+              <a class="button button-red slider-button" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+              <img src="img/slider1.jpg" width="620" height="266" alt="Мужчина сверлит стену дрелью Bosch">
+            </li>
+            <li class="slider-item slide2">
+              <h3 class="slider-title">ДРЕЛИ</h3>
+              <p class="slider-text">Соседям на радость</p>
+              <a class="button button-red slider-button" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+              <img src="img/slider2.jpg" width="620" height="266" alt="Другой мужчина сверлит стену дрелью Bosch">
+            </li>
+          </ul>
         </section>
       </section>
       <section class="popular-products">
@@ -361,24 +367,24 @@
           Все права защищены
         </div>
         <div class="footer-social-buttons">
-        <ul class="footer-social">
-          <li class="social-item">
-            <a class="social-link" href="#">
-              <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="#">
-              <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="#">
-              <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
-            </a>
-          </li>
-        </ul>
-      </div>
+          <ul class="footer-social">
+            <li class="social-item">
+              <a class="social-link" href="#">
+                <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#">
+                <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#">
+                <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="footer-back-links">
           <p class="academy-mail">
             Обратная связь:<br>
