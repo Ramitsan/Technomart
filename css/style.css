@@ -35,6 +35,7 @@ img {
   padding: 0 10px;
 }
 
+
 .header-top {
   background-color: #293449;
   font-size: 17px;
@@ -58,17 +59,29 @@ img {
   margin-bottom: -4px;
 }
 
-.search {
-  width: 270px;
-  background-color: #293449;
-  margin: 0 auto;
-  padding: 0;
+input[type=search] {  
+  width: 270px; /* указываем размеры полю */
+  height: 43px;
+  border: none; 
+  color: #fff;
+  background: url("img/icon-login.svg"); /* фоновая картинка для поля НЕ РАБОТАЕТ!!! */
+  padding-left: 5px; /* внутренние отступы для красоты */
+  padding-right: 5px;
+  box-sizing: border-box; /* чтобы размеры поля были во всех браузерах одинаковыми (по умолчанию вебкиты с крестиком для очистки иначе рассчитывают размер, чем остальные браузеры) */
+  
 }
 
-.search:hover {
-  background-color: #212a3a;
+input[type="search"]:hover {
+  outline: none; 
+  color: #fff;
+  background-color: #212a3a; 
 }
-
+input[type="search"]:focus,
+input[type="search"]:active{
+  outline: none;
+  color: #000;
+  background-color: #fff; 
+}
 .header-form {
   background-image: url("img/icon-search.svg");
   background-repeat: no-repeat;
@@ -491,6 +504,15 @@ a.button-white {
   background-image: url("img/icon-login.svg");
   background-repeat: no-repeat;
 }
+.button-white.login-link:hover,
+.button-white.registration-link:hover{
+  color: #ee3643;
+}
+.button-white.login-link:active,
+.button-white.registration-link:active{
+  color: #000;
+  opacity: 0.3;
+}
 
 a.slider-button {
   width: 195px;
@@ -750,9 +772,10 @@ a.contacts-button {
 }
 
 /*-- Форма в фильтре--*/
-.filters {
-  width: 220px;
-  margin: 0 auto;
+.filters {          /* блок не прижимается к левому краю контейнера  */
+  width: 220px;  
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .filter fieldset {
@@ -896,7 +919,9 @@ a.contacts-button {
 .filters {
   margin: 0 auto;
 }
-
+..catalog-content {
+  margin-left: auto;
+}
 .catalog-items {
   width: 700px;
   margin: 20px auto;
@@ -1105,4 +1130,53 @@ a.contacts-button {
 
 .slide2 {
   display: none;
+}
+/*  Пагинация  */
+.pagination {
+  
+  width: 285px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  margin-left: 0;
+ 
+  padding: 0;
+
+  white-space: nowrap;
+
+  background-color: #fff;
+}
+.pagination-item {
+  display: inline-block;
+  min-width: 38px;
+  height: 38px;
+  padding: 15px;
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  margin-right: 10px;
+
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'PT Sans', Arial, sans-serif;
+  line-height: 18px;
+  color: #000;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.active-page {
+  background-color: #ee3643;
+  color: #fff;
+  border: 2px solid #ee3643;
+}
+.active-page:hover {
+  border: 2px solid #ee3643;
+}
+.pagination-item:not(.active-page):hover {
+  border: 2px solid #bdc6ca;
+}
+.pagination-item:not(.active-page):active {
+  border: 2px solid #ee3643;
 }
