@@ -1,15 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
-	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
-<g id="Layer_1">
-</g>
-<g id="Layer_2">
-	<g>
-		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
-		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
-	</g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="23" viewBox="0 0 27 23">
+  <image id="checkbox-on" width="27" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAXCAYAAAD6FjQuAAABWElEQVRIia3Wvy4FQRTH8e8VhUgUCq14AKXqhMKfUPEAVycaN/ESt9JLUN+EWkSUGtnzBJ5Aq0FDNCuHGVlrdnb2z6/Zmezs+eTsziQ7yLJsFjgFhsAM3fMObImIlitNO+igB8RnbJCqLgCHwImI5B4bukV7wENHKBeRVwfdA8vAoqqODLTXmLuF88BL0+oi8mdegnwugNFUx05SIMsqMNcbFoEegQ0ReesFS4CebRLD7Ejs9AXFMINugTtgP2IlQ7itXwWtu/nEXS+7QFWdbRcgv2ZS6rAWUtWjFOzazkRgnQdTobNy4dBrtJy7a/EBDz4BS1VQ4LloZ0Uw1GEdVJm6cxYCW0EkYDGwEZSKhcBvCEiGiGyQKtBiO22zKUSDzorgShuoDWb5bAN57MON14BB20I+qrrrxr7ub+ybXbl/kJuWxatuWd1/2LEb9/V3ZR0Z5Ov+BPgCd/d7QVeQddQAAAAASUVORK5CYII="/>
 </svg>

@@ -16,11 +16,14 @@
     <div class="header-top">
       <div class="container">
         <div class="d-flex">
-          <div class="header-logo">
-            <a href="#" class="logo-link">
-              <img src="img/logo-header.png" width="220" height="47" alt="Логотип">
+          <div class="header-logo"> 
+            <a href="#">
+              <div class="logo-link">
+                <h2 class="visually-hidden">Логотип</h2>
+              </div>
             </a>
           </div>
+          
           <div class="widgets">
             <div class="search">
               <form action="index.html" method="GET" class="header-form">
@@ -309,13 +312,16 @@
             Мы можем доставить ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаниями:
           </p>
-          <ul class="transport-company">
-            <img src="img/red-line.png" class="red-line" width="25" height="2" alt="маркер">
-            <li>Деловые линии</li>
-            <img src="img/red-line.png" class="red-line" width="25" height="2" alt="маркер">
-            <li>Автотрейдинг</li>
-            <img src="img/red-line.png" class="red-line" width="25" height="2" alt="маркер">
-            <li>ЖелДорЭкспедиция</li>
+          <ul class="transport-company">            
+            <li>
+              <img src="img/red-line.png" class="red-line" width="25" height="2" alt="маркер">Деловые линии
+            </li>            
+            <li>
+              <img src="img/red-line.png" class="red-line" width="25" height="2" alt="маркер">Автотрейдинг
+            </li>            
+            <li>
+              <img src="img/red-line.png" class="red-line" width="25" height="2" alt="маркер">ЖелДорЭкспедиция
+            </li>
           </ul>
           <a class="button button-red company-button" href="#">Подробнее о компании</a>
         </div>
@@ -401,31 +407,47 @@
   </footer>
   <!-- Footer [END] -->
   <!-- Write us -->
-  <section class="modal write-us">
-    <form action="https://echo.htmlacademy.ru" method="POST">
-      <label for="username"> Ваше имя: <br>
-        <input type="text" id="username" name="username" placeholder="Имя Фамилия" autofocus>
-      </label><br>
-      <label for="email"> Ваш e-mail: <br>
-        <input type="email" id="email" name="email" placeholder="email@example.com">
-      </label>
-      <br>
-      <label for="comment"> Текст письма: <br>
-        <textarea id="comment" rows="5" placeholder="В свободной форме"></textarea>
-      </label>
-      <label for="submit" class="visually-hidden"> Отправить
-        <input type="submit" id="submit" value="Отправить">
-      </label>
-      <span class="modal-close">x</span>
-      <img src="img/form-2.svg" width="21" height="21" alt="Закрыть">
-    </form>
-  </section>
+ <section class="modal write-us">
+  <h2 class="visually-hidden">Напишите нам</h2>
+  <form action="https://echo.htmlacademy.ru" method="POST">
+    <div class="modal-top">
+      <div class="modal-container">
+        <p>
+          <label for="username"> Ваше имя: <br>
+            <input type="text" id="username" name="username" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label for="email"> Ваш e-mail: <br>
+            <input type="email" id="email" name="email" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label for="comment"> Текст письма: <br>
+            <textarea id="comment" rows="5" placeholder="В свободной форме"></textarea>
+          </label>
+        </p>
+      </div>
+    </div>
+    <div class="modal-bottom">
+      <div class="modal-container">
+        <button class="button button-red" type="submit">Отправить</button>
+       </div>
+    </div>
+    <button class="modal-close" type="button">Закрыть</button>
+  </form>
+</section>
+
+
   <!-- Write us [END] -->
   <!-- Map popup -->
   <section class="modal modal-map">
-    <span class="modal-close">x</span>
-    <img src="img/form-2.svg" width="21" height="21" alt="Закрыть">
-  </section>
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <p>    
+      <img src="img/map-big.png" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </p>
+    <button class="modal-close" type="button">Закрыть</button>
+    </section>
   <!-- Map popup [END] -->
 </body>
 
