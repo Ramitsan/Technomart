@@ -45,7 +45,8 @@ img {
 
 .header-top .d-flex {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .logo-link {
@@ -54,7 +55,6 @@ img {
   height: 47px;
   padding: 0;
   margin: 0;
-
   margin-bottom: -4px;
   background: url("../img/logo-header.png") no-repeat;
 }
@@ -67,16 +67,38 @@ img {
   background: url("../img/logo-header-click.png") no-repeat;
 }
 
+.header-form {
+  padding-left: 0;
+  margin: 0;
+}
+
+.form-search {
+  background-image: url("../img/icon-search.svg");
+  background-position: 15px 50%;
+  background-repeat: no-repeat;
+}
+
+.form-search:hover {
+  background-image: url("../img/icon-search-hover.svg");
+}
+
+.form-search:focus,
+.form-search:active {
+  background-image: url("../img/icon-search-active.svg");
+}
+
 input[type=search] {
   width: 270px;
   height: 43px;
   border: none;
   color: #fff;
-  background: url("../img/icon-search.svg") no-repeat;  /* фоновая картинка для поля НЕ РАБОТАЕТ!!! */
-  padding-left: 5px;
+
+  padding-left: 45px;
   padding-right: 5px;
   box-sizing: border-box;
+  background-color: #293449;
 }
+
 
 input[type="search"]:hover {
   outline: none;
@@ -91,32 +113,105 @@ input[type="search"]:active {
   background-color: #fff;
 }
 
+/* Меняем цвет плейсхолдера в форме поиска */
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+::-moz-placeholder {
+  color: #fff;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #fff;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #fff;
+}
+
+
 .widgets {
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
   text-align: left;
+}
 
+.bookmark,
+.cart {
+  width: 150px;
+  padding: 13px 30px;
+}
+
+.bookmark {
+  background-image: url("../img/icon-bookmark.svg");
+  /* иконка закладок не работает в Хроме! */
+  background-position: 7px 50%;
+  background-repeat: no-repeat;
+}
+
+.cart {
+  background-image: url("../img/cart-icon.svg");
+  /* иконка корзины не работает в Хроме! */
+  background-position: 7px 50%;
+  background-repeat: no-repeat;
 }
 
 .bookmark:hover {
-  background-color: #212a3a;
+  background-image: url("../img/icon-bookmark-hover.svg");
+  /* иконка закладок не работает в Хроме! */
+}
+
+.cart:hover {
+  background-image: url("../img/cart-icon-hover.svg");
+  /* иконка корзины не работает в Хроме! */
 }
 
 .bookmark:active {
-  background-color: #161d29;
+  background-image: url("../img/icon-bookmark-active.svg");
+  /* иконка закладок не работает в Хроме! */
 }
 
-.header-form {
-  padding-left: 0;
-  margin: 0;
+.cart:active {
+  background-image: url("../img/cart-icon-active.svg");
+  /* иконка корзины не работает в Хроме! */
+}
+
+
+.bookmark:hover,
+.cart-null:hover {
+  background-color: #212a3a;
+}
+
+.bookmark:active,
+.cart-null:active {
+  background-color: #161d29;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.cart-red {
+  background-color: #ee3643;
+}
+
+.checkout .button-green {
+  width: 150px;
+  padding-top: 12px;
+
+}
+
+.checkout .button-green:active {
+  color: #fff;
+  opacity: 0.5;
 }
 
 .header-middle {
-
-  padding-top: 47px;
-  padding-bottom: 18px;
-
+  padding-top: 55px;
+  padding-bottom: 10px;
+  margin: 0;
 }
 
 .header-middle .d-flex {
@@ -129,6 +224,8 @@ input[type="search"]:active {
 .header-contacts,
 .user-navigation {
   max-width: 300px;
+  margin: 0;
+  padding: 0;
 }
 
 .header-title h1 {
@@ -140,6 +237,7 @@ input[type="search"]:active {
   text-align: left;
   font-weight: normal;
   margin: 0;
+  padding: 0;
 
   margin-left: 45px;
 }
@@ -156,25 +254,25 @@ input[type="search"]:active {
   font-style: normal;
   line-height: 21px;
   border: 3px solid #fff;
-  padding-top: 10px;
-  padding-bottom: 9px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 12px;
   padding-right: 49px;
 }
 
 .header-phone img {
-  padding-right: 41px;
+  padding-right: 30px;
 }
 
 .header-street {
   color: #32425c;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 20px;
   font-style: normal;
 }
 
 .header-nav {
-  padding-bottom: 60px;
+  padding-bottom: 45px;
 }
 
 .navbar {
@@ -227,6 +325,7 @@ input[type="search"]:active {
   height: 123px;
 }
 
+
 .materials {
   background-color: #ffbf47;
 }
@@ -252,20 +351,57 @@ input[type="search"]:active {
   line-height: 30px;
   font-weight: bold;
   color: #fff;
+  margin: 0;
+  padding-top: 25px;
   padding-left: 23px;
 }
 
 .promo-link {
-  display: inline-block;
-  width: 136px;
+  display: block;
+  width: 135px;
   height: 38px;
   color: #fff;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin-bottom: 22px;
+  margin-top: 15px;
+  margin-left: 23px;
 }
 
+.promo-link:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo-link:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promo-block1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-bottom: 20px;
+}
+
+.promo-block2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.promo-block3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
 
 .footer {
   background-color: #32425c;
@@ -294,12 +430,63 @@ input[type="search"]:active {
   display: inline;
 }
 
+.footer-logo {
+
+  width: 220px;
+  padding: 0;
+  margin: 0;
+}
+
 .footer-address,
 .footer-phone,
 .nav-footer a {
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
+}
+
+.footer-flex-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  max-height: 68px;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-footer a {
+  display: block;
+  padding: 20px 30px;
+  margin: 0;
+}
+
+.footer-flex-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+.nav-footer-materials {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-footer-materials a {
+  display: block;
+  padding: 20px 25px;
+  margin: 0;
+}
+
+.footer-address {
+  width: 350px;
+  margin: 0;
 }
 
 .footer-copyright {
@@ -469,6 +656,7 @@ a.button-green {
   cursor: pointer;
 }
 
+
 a.button-green:hover {
   background-color: #5fbb2d;
 }
@@ -494,9 +682,18 @@ a.button-white {
   background-position: 15px center;
 }
 
+.button-white.login-link:hover {
+  background-image: url("../img/icon-login-hover.svg");
+}
+
+.button-white.login-link:active {
+  background-image: url("../img/icon-login-active.svg");
+}
+
 .button-white.login-link:hover,
 .button-white.registration-link:hover {
   color: #ee3643;
+
 }
 
 .button-white.login-link:active,
@@ -505,11 +702,12 @@ a.button-white {
   opacity: 0.3;
 }
 
-a.slider-button {
+.slider-button {
   width: 195px;
   position: relative;
-  top: 245px;
+  top: 35px;
   left: 25px;
+  z-index: 4;
 }
 
 a.popular-button,
@@ -698,6 +896,12 @@ a.contacts-button {
 .transport-company {
   font-size: 18px;
   line-height: 20px;
+}
+
+.contacts-button-map img {
+  margin-bottom: 35px;
+  margin-top: 20px;
+
 }
 
 /* Стили Каталога */
@@ -1051,11 +1255,15 @@ fieldset.filter-item {
 
 .catalog-items .catalog-item:not(:nth-child(3)):not(:nth-child(5)):not(:nth-child(7)) .flag-new {
   display: none;
-}    /* в каталоге скрываем флажок NEW у всех товаров, кроме 3, 5, 7-го  */
+}
+
+/* в каталоге скрываем флажок NEW у всех товаров, кроме 3, 5, 7-го  */
 
 .popular-items .popular-item:not(:nth-child(4)) .flag-new {
   display: none;
-}    /* на главной скрываем флажок NEW у всех товаров, кроме 4-го  */
+}
+
+/* на главной скрываем флажок NEW у всех товаров, кроме 4-го  */
 
 .catalog-item .actions,
 .popular-item .actions {
@@ -1210,18 +1418,30 @@ fieldset.filter-item {
 
 /*  Слайдер */
 
-.slader {
+.slider {
   width: 620px;
   height: 266px;
   background-color: #000;
   margin: 0;
   padding: 0;
+
+
 }
 
+.slider-controls {
+  padding: 0;
+  margin: 0;
+}
+
+
 .slider-item img {
-  display: flex;
+  width: 620px;
+  height: 266px;
   margin: 0;
   padding: 0;
+  position: relative;
+  top: -212px;
+  left: 0px;
 }
 
 .slider-title {
@@ -1232,8 +1452,9 @@ fieldset.filter-item {
   color: #fff;
 
   position: relative;
-  top: 175px;
+  top: -40px;
   left: 25px;
+  z-index: 1;
 }
 
 .slider-text {
@@ -1243,11 +1464,12 @@ fieldset.filter-item {
   color: #fff;
 
   position: relative;
-  top: 145px;
+  top: -75px;
   left: 25px;
+  z-index: 3;
 }
 
-.slide2 {
+.slide1 {
   display: none;
 }
 
@@ -1306,11 +1528,71 @@ fieldset.filter-item {
 }
 
 /*  Модальные окна*/
-.modal.write-us,
-.modal.modal-map,
-.modal.add-to-basket {
+.write-us,
+.modal-map,
+.add-to-basket {
   display: none;
 }
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+/* Анимация при открытии модального окна */
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+
+
 
 .modal {
   position: fixed;
@@ -1332,6 +1614,8 @@ fieldset.filter-item {
   line-height: 18px;
   font-weight: normal;
   text-decoration: none;
+
+  z-index: 25;
 }
 
 .modal-container {
@@ -1421,7 +1705,7 @@ textarea {
   margin-left: 0;
 }
 
-textarea {
+.write-us textarea {
   width: 460px;
   padding: 12px 15px;
   margin: 10px 0;
@@ -1459,7 +1743,17 @@ textarea {
 }
 
 .modal-map p {
-  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
 }
 
 /* Модальное окно на странице каталога */

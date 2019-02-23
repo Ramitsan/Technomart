@@ -16,32 +16,28 @@
     <div class="header-top">
       <div class="container">
         <div class="d-flex">
-          <div class="header-logo"> 
+          <div class="header-logo">
             <a href="#">
               <div class="logo-link">
                 <h2 class="visually-hidden">Логотип</h2>
               </div>
             </a>
           </div>
-          
           <div class="widgets">
             <div class="search">
               <form action="index.html" method="GET" class="header-form">
-                <!--<img src="img/icon-search.svg" width="17" height="17" alt="Поиск">-->
                 <label class="visually-hidden" for="search">Поиск</label>
                 <input class="form-search" type="search" id="search" placeholder="Поиск:">
               </form>
             </div>
             <div class="bookmark">
-              <!--<img src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки">-->
-              <span class="widget-info">Закладки: 0</span>
+              <a>Закладки: 0</a>
             </div>
-            <div class="widget-item">
-              <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
-              <span class="widget-info">Корзина: 0</span>
+            <div class="cart cart-null">
+              <a>Корзина: 0</a>
             </div>
           </div>
-          <div>
+          <div class="checkout">
             <a class="button button-green">Оформить заказ</a>
           </div>
         </div>
@@ -84,7 +80,7 @@
         </nav>
       </div>
     </div>
-  </div>
+    </div>
   </header>
   <!-- Header [END] -->
   <!-- Main -->
@@ -92,62 +88,67 @@
     <div class="container">
       <section class="promo">
         <h2 class="visually-hidden">Промо-категории</h2>
-        <div class="promo-item materials">
-          <h3 class="promo-title">Материалы</h3>
-          <a href="#" class="promo-link">На любой вкус</a>
-          <div class="promo-image">
-            <img src="img/icon-1.svg" width="44" height="65" alt="Материалы">
+        <div class="promo-block1">
+          <div class="promo-item materials">
+            <h3 class="promo-title">Материалы</h3>
+            <a href="#" class="promo-link">На любой вкус</a>
+            <div class="promo-image">
+              <img src="img/icon-1.svg" width="44" height="65" alt="Материалы">
+            </div>
           </div>
-          <img src="img/new-flag.png" width="60" height="59" alt="Новинка">
-        </div>
-        <div class="promo-item tool">
-          <h3 class="promo-title">Инструмент</h3>
-          <a href="#" class="promo-link">На все случаи</a>
-          <div class="promo-image">
-            <img src="img/icon-2.svg" width="75" height="61" alt="Инструмент">
+          <div class="promo-item tool">
+            <h3 class="promo-title">Инструмент</h3>
+            <a href="#" class="promo-link">На все случаи</a>
+            <div class="promo-image">
+              <img src="img/icon-2.svg" width="75" height="61" alt="Инструмент">
+            </div>
           </div>
-        </div>
-        <div class="promo-item technique">
-          <h3 class="promo-title">Техника</h3>
-          <a href="#" class="promo-link">Для стройки</a>
-          <div class="promo-image">
-            <img src="img/icon-3.svg" width="78" height="62" alt="Техника">
-          </div>
-        </div>
-        <div class="promo-item discounts">
-          <h3 class="promo-title">Скидки 50%</h3>
-          <a href="#" class="promo-link">На 350 товаров</a>
-          <div class="promo-image">
-            <img src="img/icon-4.svg" width="59" height="72" alt="Скидки 50%">
+          <div class="promo-item technique">
+            <h3 class="promo-title">Техника</h3>
+            <a href="#" class="promo-link">Для стройки</a>
+            <div class="promo-image">
+              <img src="img/icon-3.svg" width="78" height="62" alt="Техника">
+            </div>
           </div>
         </div>
-        <div class="promo-item delivery">
-          <h3 class="promo-title">Доставка</h3>
-          <a href="#" class="promo-link">Бесплатно</a>
-          <div class="promo-image">
-            <img src="img/icon-5.svg" width="78" height="63" alt="Доставка">
+        <div class="promo-block2">
+          <section class="slider">
+            <div class="slider-controls">
+              <button type="button" alt="Влево"></button>
+              <button type="button" alt="Вправо"></button>
+            </div>
+            <div class="slider-items">
+              <div class="slider-item slide1">
+                <h3 class="slider-title">ПЕРФОРАТОРЫ</h3>
+                <p class="slider-text">Настоящие мужские игрушки</p>
+                <a class="button button-red slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                <img src="img/slider1.jpg" width="620" height="266" alt="Мужчина сверлит стену дрелью Bosch">
+              </div>
+              <div class="slider-item slide2">
+                <h3 class="slider-title">ДРЕЛИ</h3>
+                <p class="slider-text">Соседям на радость</p>
+                <a class="button button-red slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                <img src="img/slider2.jpg" width="620" height="266" alt="Другой мужчина сверлит стену дрелью Bosch">
+              </div>
+            </div>
+          </section>
+          <div class="promo-block3">
+            <div class="promo-item discounts">
+              <h3 class="promo-title">Скидки 50%</h3>
+              <a href="#" class="promo-link">На 350 товаров</a>
+              <div class="promo-image">
+                <img src="img/icon-4.svg" width="59" height="72" alt="Скидки 50%">
+              </div>
+            </div>
+            <div class="promo-item delivery">
+              <h3 class="promo-title">Доставка</h3>
+              <a href="#" class="promo-link">Бесплатно</a>
+              <div class="promo-image">
+                <img src="img/icon-5.svg" width="78" height="63" alt="Доставка">
+              </div>
+            </div>
           </div>
         </div>
-        <section class="slider">
-          <div class="slider-controls">
-            <button type="button" class="slider-button" alt="Влево"></button>
-            <button type="button" class="slider-button" alt="Вправо"></button>
-          </div>
-          <ul class="slider-items">
-            <li class="slider-item slide1">
-              <h3 class="slider-title">ПЕРФОРАТОРЫ</h3>
-              <p class="slider-text">Настоящие мужские игрушки</p>
-              <a class="button button-red slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-              <img src="img/slider1.jpg" width="620" height="266" alt="Мужчина сверлит стену дрелью Bosch">
-            </li>
-            <li class="slider-item slide2">
-              <h3 class="slider-title">ДРЕЛИ</h3>
-              <p class="slider-text">Соседям на радость</p>
-              <a class="button button-red slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-              <img src="img/slider2.jpg" width="620" height="266" alt="Другой мужчина сверлит стену дрелью Bosch">
-            </li>
-          </ul>
-        </section>
       </section>
       <section class="popular-products">
         <div class="section-title">
@@ -312,13 +313,13 @@
             Мы можем доставить ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаниями:
           </p>
-          <ul class="transport-company">            
+          <ul class="transport-company">
             <li>
               <img src="img/red-line.png" class="red-line" width="25" height="2" alt="маркер">Деловые линии
-            </li>            
+            </li>
             <li>
               <img src="img/red-line.png" class="red-line" width="25" height="2" alt="маркер">Автотрейдинг
-            </li>            
+            </li>
             <li>
               <img src="img/red-line.png" class="red-line" width="25" height="2" alt="маркер">ЖелДорЭкспедиция
             </li>
@@ -328,7 +329,7 @@
         <div class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-          <a class="map" href="map.html">
+          <a class="map contacts-button-map" href="#">
             <img src="img/map.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a> <br>
           <a class="button button-red contacts-button" href="#">Заблудились? Напишите нам!</a>
@@ -341,30 +342,38 @@
   <footer class="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="footer-logo">
-          <a href="#" class="logo-link">
-            <img src="img/logo-footer.png" width="220" height="68" alt="Логотип">
-          </a>
+        <div class="footer-flex-top">
+          <div class="footer-logo">
+            <a href="#">
+              <img src="img/logo-footer.png" width="220" height="68" alt="Логотип">
+            </a>
+          </div>
+          <div>
+            <ul class="nav-footer">
+              <li class="navbar-item"><a href="#">Компания</a></li>
+              <li class="navbar-item"><a href="#">Новости</a></li>
+              <li class="navbar-item"><a href="catalog.html">Каталог</a></li>
+              <li class="navbar-item"><a href="#">Доставка</a></li>
+              <li class="navbar-item"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
         </div>
-        <ul class="nav-footer">
-          <li class="navbar-item"><a href="#">Компания</a></li>
-          <li class="navbar-item"><a href="#">Новости</a></li>
-          <li class="navbar-item"><a href="catalog.html">Каталог</a></li>
-          <li class="navbar-item"><a href="#">Доставка</a></li>
-          <li class="navbar-item"><a href="#">Контакты</a></li>
-        </ul>
-        <address class="footer-address">
-          <p class="footer-street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a href="tel:+78125550555" class="footer-phone">
-            +7 (812) 555-05-55
-          </a>
-        </address>
-        <ul class="nav-footer-materials">
-          <li class="navbar-item"><a href="#">Материалы</a></li>
-          <li class="navbar-item"><a href="#">Техника</a></li>
-          <li class="navbar-item"><a href="#">Инструмент</a></li>
-          <li class="navbar-item"><a href="#">Спецпредложения</a></li>
-        </ul>
+        <div class="footer-flex-middle">
+          <address class="footer-address">
+            <p class="footer-street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a href="tel:+78125550555" class="footer-phone">
+              +7 (812) 555-05-55
+            </a>
+          </address>
+          <div>
+            <ul class="nav-footer-materials">
+              <li class="navbar-item"><a href="#">Материалы</a></li>
+              <li class="navbar-item"><a href="#">Техника</a></li>
+              <li class="navbar-item"><a href="#">Инструмент</a></li>
+              <li class="navbar-item"><a href="#">Спецпредложения</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
@@ -407,48 +416,48 @@
   </footer>
   <!-- Footer [END] -->
   <!-- Write us -->
- <section class="modal write-us">
-  <h2 class="visually-hidden">Напишите нам</h2>
-  <form action="https://echo.htmlacademy.ru" method="POST">
-    <div class="modal-top">
-      <div class="modal-container">
-        <p>
-          <label for="username"> Ваше имя: <br>
-            <input type="text" id="username" name="username" placeholder="Имя Фамилия">
-          </label>
-        </p>
-        <p>
-          <label for="email"> Ваш e-mail: <br>
-            <input type="email" id="email" name="email" placeholder="email@example.com">
-          </label>
-        </p>
-        <p>
-          <label for="comment"> Текст письма: <br>
-            <textarea id="comment" rows="5" placeholder="В свободной форме"></textarea>
-          </label>
-        </p>
+  <section class="modal write-us">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="POST" class="modal-form">
+      <div class="modal-top">
+        <div class="modal-container">
+          <p>
+            <label for="username"> Ваше имя: <br>
+              <input type="text" id="username" name="username" placeholder="Имя Фамилия">
+            </label>
+          </p>
+          <p>
+            <label for="email"> Ваш e-mail: <br>
+              <input type="email" id="email" name="email" placeholder="email@example.com">
+            </label>
+          </p>
+          <p>
+            <label for="comment"> Текст письма: <br>
+              <textarea id="comment" rows="5" placeholder="В свободной форме"></textarea>
+            </label>
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="modal-bottom">
-      <div class="modal-container">
-        <button class="button button-red" type="submit">Отправить</button>
-       </div>
-    </div>
-    <button class="modal-close" type="button">Закрыть</button>
-  </form>
-</section>
-
-
+      <div class="modal-bottom">
+        <div class="modal-container">
+          <button class="button button-red" type="submit">Отправить</button>
+        </div>
+      </div>
+      <button class="modal-close" type="button">Закрыть</button>
+    </form>
+  </section>
   <!-- Write us [END] -->
   <!-- Map popup -->
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <p>    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5802878294835!2d30.322743076048596!3d59.93910639132735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1550942294208" width="970" height="476" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <p>
       <img src="img/map-big.png" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </p>
     <button class="modal-close" type="button">Закрыть</button>
-    </section>
+  </section>
   <!-- Map popup [END] -->
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
