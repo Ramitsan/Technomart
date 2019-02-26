@@ -55,6 +55,10 @@ window.addEventListener("keydown", function (evt) {
       if (popup.classList.contains("modal-show")) {
         popup.classList.remove("modal-show");
         popup.classList.remove("modal-error");
+        mapPopup.classList.remove("modal-show");
+      }
+      if (mapPopup.classList.contains("modal-show")) {
+        mapPopup.classList.remove("modal-show");
       }
     }
   });
@@ -75,11 +79,4 @@ window.addEventListener("keydown", function (evt) {
     mapPopup.classList.remove("modal-show");
   });
 
-  window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
-    if (evt.keyCode === 27) {
-      if (mapPopup.classList.contains("modal-show")) {
-        mapPopup.classList.remove("modal-show");
-      }
-    }
-  });
+ 
