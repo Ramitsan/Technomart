@@ -18,7 +18,7 @@
         <div class="d-flex">
           <div class="header-logo">
             <p class="visually-hidden">Логотип</p>
-            <a class="logo-link" href="index.html"></a>            
+            <a class="logo-link" href="index.html"></a>
           </div>
           <div class="widgets">
             <div class="search">
@@ -54,15 +54,11 @@
               <p class="header-street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </address>
           </div>
-          <div class="user-navigation">
-            <a href="#" class="btn auth-link">
-              <img src="img/icon-user.svg" width="20" height="18" alt="Аватар">Равшан Джамшутович
-              <img src="img/icon-logout.svg" width="21px" height="17px" alt="Выйти">
-            </a>
+          <div class="user-navigation-catalog">
+            <a href="#" class="button button-white auth-link">Равшан Джамшутович</a>
             <br>
-            <a href="#">Мои заказы</a>
-            <img src="img/point.png" width="4" height="5" alt="Точка-разделитель">
-            <a href="#">Личный кабинет</a>
+            <a href="#" class="user-orders">Мои заказы</a>
+            <a href="#" class="user-profile">Личный кабинет</a>
           </div>
         </div>
       </div>
@@ -92,9 +88,9 @@
           <a href="index.html">
             <img src="img/icon-home.svg" width="15" height="12" alt="Вернуться на главную">
           </a>
-        </li>        
-        <li><a href="catalog.html">Каталог</a></li>       
-        <li><a href="#">Инструмент</a></li>        
+        </li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="#">Инструмент</a></li>
         <li class="breadcrumbs-current"><a href="#">Перфораторы</a></li>
       </ul>
       <div class="tool-title">
@@ -171,10 +167,14 @@
             <a href="catalog.html?sort=functional">ПО ФУНКЦИОНАЛУ</a>
             <div class="down-up">
               <a class="sort-up" href="catalog.html?sort=up">
-                <img src="img/icon-up-dir.svg" width="11" height="10" alt="Сортировка по возрастанию">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                  <polygon fill="#231F20" points="5.5,0 0,10 11,10 " />
+                </svg>
               </a>
               <a class="sort-down" href="catalog.html?sort=down">
-                <img src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по убыванию">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                  <polyline fill="#231F20" points="5.5,10 0,0 11,0 " />
+                </svg>
               </a>
             </div>
           </div>
@@ -304,7 +304,7 @@
             <a class="pagination-item active-page">1</a>
             <a class="pagination-item" href="#">2</a>
             <a class="pagination-item" href="#">3</a>
-            <a class="pagination-item" href="#">Следующая</a>
+            <a class="pagination-item next" href="#">Следующая</a>
           </div>
         </section>
       </section>
