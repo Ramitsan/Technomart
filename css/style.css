@@ -72,43 +72,91 @@ img {
   margin: 0;
 }
 
+
+/* вставка иконки поиска через псевдоэлемент 
+.search::before {     
+  content: "";
+  
+  position: absolute;
+  top: 13px;
+  left: 399px;
+  
+  width: 17px;
+  height: 17px;
+  
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.search:hover::before {
+  opacity: 1;
+}
+
+.search:focus::before,
+.search:active::before {
+  content: "";
+  
+  position: absolute;
+  top: 13px;
+  left: 399px;
+  
+  width: 17px;
+  height: 17px;
+  
+  background-image: url("../img/icon-search-red.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 1;
+} 
+
+*/
+
+
+
+/* вставка иконки поиска через бэкграунд */
 .form-search {
   background-image: url("../img/icon-search.svg");
-  background-position: 18px 50%;
+  background-position: 17px 50%;
   background-repeat: no-repeat;
+ 
 }
 
 .form-search:hover {
   background-image: url("../img/icon-search-hover.svg");
+  background-position: 18px 50%;
+  background-repeat: no-repeat;
 }
 
 .form-search:focus,
 .form-search:active {
   background-image: url("../img/icon-search-active.svg");
-}
+  background-position: 18px 50%;
+  background-repeat: no-repeat;
+} 
 
-input[type=search] {
+input[type="search"] {
   width: 270px;
   height: 43px;
   border: none;
   color: #fff;
 
-  padding-left: 50px;
+  padding-left: 48px;
   padding-right: 5px;
   box-sizing: border-box;
   background-color: #293449;
-}
-
+} 
 
 input[type="search"]:hover {
-  outline: none;
   color: #fff;
   background-color: #212a3a;
 }
 
 input[type="search"]:focus,
 input[type="search"]:active {
-  outline: none;
   color: #000;
   background-color: #fff;
 }
@@ -118,49 +166,65 @@ input[type="search"]:active {
   justify-content: space-between;
   vertical-align: middle;
   text-align: right;
+  position: relative;
 }
 
 .bookmark,
 .cart {
   width: 150px;
   padding: 13px 27px;
+
 }
+
+
+.bookmark::before {      
+  content: "";
+  
+  position: absolute;
+  top: 13px;
+  left: 287px;
+  
+  width: 14px;
+  height: 16px;
+  
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.bookmark:hover::before,
+.bookmark:focus::before,
+.cart:hover::before,
+.cart:focus::before {
+  opacity: 1;
+}
+.bookmark:active::before,
+.cart:active::before {
+  opacity: 0.5;
+}
+
 
 .cart {
   padding-right: 30px;
 }
 
-.bookmark {}
-
-.bookmark {
-  background-image: url("../img/icon-bookmark.svg");
-
-  background-position: 19px 50%;
+.cart::before {      
+  content: "";
+  
+  position: absolute;
+  top: 13px;
+  left: 438px;
+  
+  width: 15px;
+  height: 15px;
+  
+  background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
 }
 
-.cart {
-  background-image: url("../img/cart-icon.svg");
-
-  background-position: 19px 50%;
-  background-repeat: no-repeat;
-}
-
-.bookmark:hover {
-  background-image: url("../img/icon-bookmark-hover.svg");
-}
-
-.cart:hover {
-  background-image: url("../img/cart-icon-hover.svg");
-}
-
-.bookmark:active {
-  background-image: url("../img/icon-bookmark-active.svg");
-}
-
-.cart:active {
-  background-image: url("../img/cart-icon-active.svg");
-}
 
 
 .bookmark:hover,
@@ -182,12 +246,16 @@ input[type="search"]:active {
 .checkout .button-green {
   width: 150px;
   padding-top: 12px;
-
 }
 
-.checkout .button-green:active {
+.checkout .button-green:hover {
+  background-color: #5fbb2d;
   color: #fff;
-  opacity: 0.5;
+} 
+
+.checkout .button-green:active {
+  background-color: #518534;
+  color: #b6c8ae;  
 }
 
 .header-middle {
@@ -290,7 +358,7 @@ input[type="search"]:active {
 }
 
 .auth-link:active::before {
-  background-image: url("../img/icon-user-active.svg");
+  background-image: url("../img/icon-user.svg");
 }
 
 .auth-link::after {
@@ -314,7 +382,11 @@ input[type="search"]:active {
 }
 
 .auth-link:active::after {
-  background-image: url("../img/icon-logout-active.svg");
+  background-image: url("../img/icon-logout.svg");
+}
+.auth-link:active {
+  color: #000;
+  opacity: 0.3;
 }
 
 .user-orders,
@@ -885,7 +957,7 @@ a.button-white {
 }
 
 .button-white.login-link:active {
-  background-image: url("../img/icon-login-active.svg");
+  background-image: url("../img/icon-login.svg");
 }
 
 .button-white.login-link:hover,
@@ -1045,11 +1117,30 @@ a.contacts-button {
 }
 
 .services-items {
+  position: relative;
   width: 241px;
   padding: 0;
   margin: 0;
   background-color: #32425c;
 }
+
+
+.services-items::after {
+  content: "";
+
+  position: absolute;
+  top: -40px;
+  left: 231px;
+
+  width: 10px;
+  height: 272px;
+
+  background-image: url("../img/menu-shadow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 1;
+}
+
 
 .services-items li {
   margin: 0;
@@ -1104,43 +1195,63 @@ a.contacts-button {
   font-weight: normal;
 }
 
+.services-delivery {
+  position: relative;
+}
+.services-delivery .services-features {
+  width: 275px;
+}
+.services-guarantee .services-features {
+  width: 378px;
+}
+.services-credit .services-features {
+  width: 280px;
+}
 .services-delivery div {
   max-width: 380px;
   position: absolute;
-  top: 200px;
-  left: 483px;
+  bottom: -37px;
+  left: 321px;
 }
 
 .services-delivery img {
   position: absolute;
-  bottom: 0px;
-  right: 162px;
+  bottom: -98px;
+  right: 1px;
+}
+
+.services-guarantee {
+  position: relative;
 }
 
 .services-guarantee div {
   max-width: 380px;
   position: absolute;
-  top: 200px;
-  left: 483px;
+  top: -225px;
+  left: 321px;
 }
 
 .services-guarantee img {
   position: absolute;
-  bottom: 0px;
-  right: 153px;
+  bottom: -98px;
+  right: -8px;
+}
+
+.services-credit {
+  position: relative;
 }
 
 .services-credit div {
   max-width: 380px;
   position: absolute;
-  top: 200px;
-  left: 483px;
+  top: -224px;
+  left: 321px;
 }
 
 .services-credit img {
   position: absolute;
-  bottom: 0px;
-  right: 151px;
+  bottom: -98px;
+  right: -10px;
 }
 
 .services-credit a {
@@ -1168,12 +1279,12 @@ a.contacts-button {
   font-weight: normal;
 }
 
+.about p {
+  padding-bottom: 13px;
+}
 .about ul {
   list-style: none;
-}
-
-.about p {
-  margin-bottom: 22px;
+  margin-top: -6px;
 }
 
 .transport-company {
@@ -1183,6 +1294,8 @@ a.contacts-button {
 }
 
 .transport-company li {
+  margin: 0;
+  margin-left: -4px;
   padding-bottom: 20px;
 
 }
@@ -1306,9 +1419,8 @@ a.contacts-button {
 }
 
 
-a.sort-up:active path,
-a.sort-down:active path {
-  /*цвет НЕ МЕНЯЕТСЯ!*/
+.sort-up:active path,
+.sort-down:active path {
   fill: #ee3643;
 }
 
@@ -1327,6 +1439,7 @@ a.sort-down:active path {
 }
 
 fieldset.filter-item {
+  width: 220px;
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -1338,7 +1451,7 @@ fieldset.filter-item {
   padding-top: 10px;
 }
 
-.filter .filter-item:not(:first-child) legend {
+.filter-item:not(:first-child) legend {
   margin-bottom: 18px;
 }
 
@@ -1380,7 +1493,7 @@ fieldset.filter-item {
 }
 
 .range-filter {
-  width: 260px;
+  width: 220px;
   margin-top: 24px;
 }
 
@@ -1437,16 +1550,18 @@ fieldset.filter-item {
 }
 
 .price-controls {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
   font-size: 0;
   padding-bottom: 25px;
 }
 
 .price-controls label {
   display: inline-block;
-  width: 50%;
-
   font-size: 16px;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .price-controls input {
@@ -1464,6 +1579,14 @@ fieldset.filter-item {
   border: none;
   border-radius: 5px;
   background: #f7f3ec;
+}
+
+.min-price::after {
+  content: "—";
+
+  position: absolute;
+  top: 10px;
+  left: 106px;
 }
 
 .filter ul {
@@ -1585,6 +1708,7 @@ fieldset.filter-item {
   text-align: center;
 
   border: 1px solid #ccc;
+  vertical-align: middle;
 }
 
 .catalog-item:nth-child(3n),
@@ -1611,13 +1735,13 @@ fieldset.filter-item {
   background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
-.catalog-items .catalog-item:not(:nth-child(3)):not(:nth-child(5)):not(:nth-child(7)) .flag-new {
+.catalog-item:not(:nth-child(3)):not(:nth-child(5)):not(:nth-child(7)) .flag-new {
   display: none;
 }
 
 /* в каталоге скрываем флажок NEW у всех товаров, кроме 3, 5, 7-го  */
 
-.popular-items .popular-item:not(:nth-child(4)) .flag-new {
+.popular-item:not(:nth-child(4)) .flag-new {
   display: none;
 }
 
@@ -1633,7 +1757,7 @@ fieldset.filter-item {
   height: 50%;
   padding: 40px 0;
 
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 1);
   z-index: 10;
 }
 

@@ -97,6 +97,7 @@
         <h2>Перфораторы</h2>
       </div>
       <section class="catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <section class="filters">
           <div class="filter-title">
             <h2>Фильтр</h2>
@@ -113,7 +114,7 @@
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price"> <input name="min-price" type="text" value="0"></label> &mdash;
+                  <label class="min-price"> <input name="min-price" type="text" value="0"></label>
                   <label class="max-price"> <input name="max-price" type="text" value="30000"></label>
                 </div>
               </div>
@@ -148,11 +149,11 @@
               <ul>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" id="battery" name="power" value="1" checked>
-                  <label>АККУМУЛЯТОРНЫЕ</label><br>
+                  <label for="battery">АККУМУЛЯТОРНЫЕ</label><br>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" id="nerwork" name="power" value="2">
-                  <label>СЕТЕВЫЕ</label><br>
+                  <label for="nerwork">СЕТЕВЫЕ</label><br>
                 </li>
               </ul>
               <button type="submit">ПОКАЗАТЬ</button>
@@ -167,14 +168,10 @@
             <a href="catalog.html?sort=functional">ПО ФУНКЦИОНАЛУ</a>
             <div class="down-up">
               <a class="sort-up" href="catalog.html?sort=up">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                  <polygon fill="#231F20" points="5.5,0 0,10 11,10 " />
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
               </a>
               <a class="sort-down" href="catalog.html?sort=down">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                  <polyline fill="#231F20" points="5.5,10 0,0 11,0 " />
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
               </a>
             </div>
           </div>
@@ -313,7 +310,7 @@
       <div class="container">
         <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В <br> ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </div>
     </section>    
   </main>
