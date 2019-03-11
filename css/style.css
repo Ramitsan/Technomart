@@ -6,11 +6,12 @@
 }
 
 body {
+  min-width: 960px;
   margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #000;
@@ -915,7 +916,7 @@ input[type="search"]:active {
 }
 
 .breadcrumbs a {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
@@ -1158,7 +1159,7 @@ a.contacts-button {
 }
 
 .popular-title {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
@@ -1263,7 +1264,7 @@ a.contacts-button {
   margin: 0;
 }
 
-.services-items a {
+.services-items span {
   display: block;
   width: 100%;
 
@@ -1283,13 +1284,13 @@ a.contacts-button {
   border-bottom: 1px solid #293449;
 }
 
-.services-items a:hover,
-.services-items a:focus {
+.services-items span:hover,
+.services-items span:focus {
   background-color: #293449;
 }
 
 
-.services-item.active a {
+.services-item.active span {
   background-color: #fff;
   color: #32425c;
   border: none;
@@ -1306,7 +1307,7 @@ a.contacts-button {
 .about p,
 .contacts p,
 .info p {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000;
@@ -1474,14 +1475,19 @@ a.contacts-button {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+<<<<<<< HEAD
 
-.contacts-button-map img {
+=======
+>>>>>>> 9d081785a364cb31b81d8fc92df0baca90af7185
+.map {
+  width: 300px;
+  height: 158px;
+  background-color: #eeeae3; 
   margin-bottom: 32px;
   margin-top: 19px;
 }
 
 /* Стили Каталога */
-
 .info {
   background-color: #f2f6f8;
   padding-top: 40px;
@@ -1504,7 +1510,7 @@ a.contacts-button {
 
 .sort h2,
 .sort a {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   text-transform: uppercase;
@@ -1590,7 +1596,7 @@ fieldset.filter-item:not(:last-child) {
 }
 
 .filter legend {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1606,10 +1612,15 @@ fieldset.filter-item:not(:last-child) {
   padding-top: 18px;
 }
 
-.filter-item button[type="submit"] {
+.btn {
+  border: 1px solid transparent;
+  vertical-align: middle;
+}
+
+.btn-filter {
   width: 140px;
   background-color: #fff;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
@@ -1617,7 +1628,7 @@ fieldset.filter-item:not(:last-child) {
   text-transform: uppercase;
   color: #000;
   padding: 9px 39px;
-  border-color: #e5e5e5;
+  border: 1px solid #e5e5e5;
   border-radius: 2px;
   margin-top: 57px;
 }
@@ -1631,7 +1642,7 @@ fieldset.filter-item:not(:last-child) {
 
 .filter-title h2,
 .sort h2 {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
@@ -1725,7 +1736,7 @@ fieldset.filter-item:not(:last-child) {
   padding: 8px 23px;
   padding-bottom: 11px;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: normal;
@@ -1771,7 +1782,7 @@ fieldset.filter-item:not(:last-child) {
   -ms-user-select: none;
   user-select: none;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   font-weight: normal;
@@ -1962,7 +1973,7 @@ fieldset.filter-item:not(:last-child) {
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1976,7 +1987,7 @@ fieldset.filter-item:not(:last-child) {
 
 .catalog-item .actions,
 .popular-item .actions {
-  display: none;
+  display: none;  
 }
 
 .catalog-item:hover .actions,
@@ -2030,7 +2041,7 @@ fieldset.filter-item:not(:last-child) {
   margin-top: 6px;
   margin-bottom: 10px;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
@@ -2042,7 +2053,7 @@ fieldset.filter-item:not(:last-child) {
   margin: 0;
   padding: 0;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -2058,7 +2069,7 @@ fieldset.filter-item:not(:last-child) {
   margin-left: 42px;
   padding: 11px 30px;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -2213,7 +2224,7 @@ fieldset.filter-item:not(:last-child) {
 
   text-align: center;
   vertical-align: middle;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   line-height: 18px;
   color: #000;
   font-size: 13px;
@@ -2384,7 +2395,7 @@ fieldset.filter-item:not(:last-child) {
   left: 25%;
 
   color: #000000;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: normal;
@@ -2472,7 +2483,7 @@ fieldset.filter-item:not(:last-child) {
 .write-us input[type="text"],
 .write-us input[type="email"],
 textarea {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000;
@@ -2560,7 +2571,7 @@ textarea {
 
 .add-to-basket h2 {
   color: #000000;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
