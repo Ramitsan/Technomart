@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт Главная</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet" type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -150,7 +150,7 @@
               <a href="#" class="bookmark">В закладки</a>
             </div>
             <div class="popular-item-image">
-              <img width="218" height="168" src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 9000">
+              <img width="218" height="168" src="img/perforator_1.jpg" alt="Перфоратор BOSCH BFG 9000">
             </div>
             <div class="popular-item-title">Перфоратор BOSCH BFG 9000</div>
             <div class="price" aria-label="Цена">32500 Р.</div>
@@ -163,7 +163,7 @@
               <a href="#" class="bookmark">В закладки</a>
             </div>
             <div class="popular-item-image">
-              <img width="218" height="168" src="img/Perforator_3.jpg" alt="Перфоратор BOSCH BFG 3000">
+              <img width="218" height="168" src="img/perforator_3.jpg" alt="Перфоратор BOSCH BFG 3000">
             </div>
             <div class="popular-item-title">Перфоратор BOSCH BFG 3000</div>
             <div class="price" aria-label="Цена">25500 Р.</div>
@@ -176,7 +176,7 @@
               <a href="#" class="bookmark">В закладки</a>
             </div>
             <div class="popular-item-image">
-              <img width="218" height="168" src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 6000">
+              <img width="218" height="168" src="img/perforator_2.jpg" alt="Перфоратор BOSCH BFG 6000">
             </div>
             <div class="popular-item-title">Перфоратор BOSCH BFG 6000</div>
             <div class="price" aria-label="Цена">30500 Р.</div>
@@ -189,7 +189,7 @@
               <a href="#" class="bookmark">В закладки</a>
             </div>
             <div class="popular-item-image">
-              <img width="218" height="168" src="img/Perforator_3.jpg" alt="Перфоратор BOSCH BFG 2000">
+              <img width="218" height="168" src="img/perforator_3.jpg" alt="Перфоратор BOSCH BFG 2000">
             </div>
             <div class="popular-item-title">Перфоратор BOSCH BFG 2000</div>
             <div class="price"></div>
@@ -210,37 +210,37 @@
           </li>
           <li class="brand">
             <a href="#">
-              <img src="img/Makita.png" width="123" height="40" alt="Makita">
+              <img src="img/makita.png" width="123" height="40" alt="Makita">
             </a>
           </li>
           <li class="brand">
             <a href="#">
-              <img src="img/DeWALT.png" width="146" height="44" alt="DeWALT">
+              <img src="img/dewalt.png" width="146" height="44" alt="DeWALT">
             </a>
           </li>
           <li class="brand">
             <a href="#">
-              <img src="img/Interskol.png" width="200" height="88" alt="Интерскол">
+              <img src="img/interskol.png" width="200" height="88" alt="Интерскол">
             </a>
           </li>
           <li class="brand">
             <a href="#">
-              <img src="img/Hitachi.png" width="169" height="31" alt="Hitachi">
+              <img src="img/hitachi.png" width="169" height="31" alt="Hitachi">
             </a>
           </li>
           <li class="brand">
             <a href="#">
-              <img src="img/LG.png" width="121" height="73" alt="LG">
+              <img src="img/lg.png" width="121" height="73" alt="LG">
             </a>
           </li>
           <li class="brand">
             <a href="#">
-              <img src="img/AEG.png" width="151" height="96" alt="AEG">
+              <img src="img/aeg.png" width="151" height="96" alt="AEG">
             </a>
           </li>
           <li class="brand">
             <a href="#">
-              <img src="img/Metabo.png" width="204" height="69" alt="Metabo">
+              <img src="img/metabo.png" width="204" height="69" alt="Metabo">
             </a>
           </li>
         </ul>
@@ -252,9 +252,9 @@
         <p>Хороший интернет-магазин отличается от плохого не только ценами! <br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <ul class="services-items">
-          <li class="services-item active"><a href="#">Доставка</a></li>
-          <li class="services-item"><a href="#">Гарантия</a></li>
-          <li class="services-item"><a href="#">Кредит</a></li>
+          <li class="services-item active"><span>Доставка</span></li>
+          <li class="services-item"><span>Гарантия</span></li>
+          <li class="services-item"><span>Кредит</span></li>
         </ul>
         <div class="services-delivery">
           <div>
@@ -306,9 +306,11 @@
         <div class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-          <a class="map contacts-button-map" href="#">
-            <img src="img/map.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-          </a> <br>
+          <div class="map">
+            <a class="contacts-button-map" href="#">
+              <img src="img/map.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">  
+            </a> 
+          </div>
           <a class="button button-red contacts-button" href="#">Заблудились? Напишите нам!</a>
         </div>
       </div>
