@@ -1984,14 +1984,14 @@ fieldset.filter-item:not(:last-child) {
 
 .catalog-item .actions,
 .popular-item .actions {
-  display: none;  
+  display: none; 
 }
 
 .catalog-item:hover .actions,
 .popular-item:hover .actions,
 .catalog-item:focus .actions,
 .popular-item:focus .actions {
-  display: block;
+  display: block;  
 }
 
 /* Кнопка "Купить" при наведении */
