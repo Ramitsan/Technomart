@@ -333,14 +333,23 @@ input[type="search"]:active {
   margin-top: -9px;
   position: relative;
 }
-
-.user-navigation-catalog .auth-link {
+.user-navigation-catalog .button-white {
   width: 300px;
   padding: 11px;
   padding-left: 47px;
   text-align: left;
   margin-bottom: 5px;
-  padding-bottom: 13px;
+  padding-bottom: 8px;
+  background-color: #fff;  
+}
+
+.auth-link {
+  font-size: 21px;
+  line-height: 21px;
+  font-style: none;
+  text-align: left;
+  font-weight: normal;
+  color: #000;
 }
 
 .auth-link::before {
@@ -367,11 +376,11 @@ input[type="search"]:active {
   background-image: url("../img/icon-user.svg");
 }
 
-.auth-link::after {
+.logout::after {
   content: "";
 
   position: absolute;
-  top: 13px;
+  top: 14px;
   right: 11px;
 
   width: 20px;
@@ -382,12 +391,12 @@ input[type="search"]:active {
   background-position: 0 0;
 }
 
-.auth-link:hover::after,
-.auth-link:focus::after {
+.logout:hover::after,
+.logout:focus::after {
   background-image: url("../img/icon-logout-hover.svg");
 }
 
-.auth-link:active::after {
+.logout:active::after {
   background-image: url("../img/icon-logout.svg");
 }
 
@@ -481,12 +490,12 @@ input[type="search"]:active {
   color: #fff;
 }
 
-.navbar .navbar-item a:hover,
-.navbar .navbar-item a:focus {
+.navbar a:hover,
+.navbar a:focus {
   background-color: #293449;
 }
 
-.navbar .navbar-item a:active {
+.navbar a:active {
   background-color: #1d2739;
 }
 
@@ -501,31 +510,31 @@ input[type="search"]:active {
   height: 123px;
 }
 
-.promo-item.materials img {
+.materials img {
   position: absolute;
   right: 42px;
   bottom: 27px;
 }
 
-.promo-item.tool img {
+.tool img {
   position: absolute;
   right: 28px;
   bottom: 29px;
 }
 
-.promo-item.technique img {
+.technique img {
   position: absolute;
   right: 31px;
   bottom: 30px;
 }
 
-.promo-item.discounts img {
+.discounts img {
   position: absolute;
   right: 45px;
   bottom: 25px;
 }
 
-.promo-item.delivery img {
+.delivery img {
   position: absolute;
   right: 31px;
   bottom: 28px;
@@ -2259,7 +2268,7 @@ fieldset.filter-item:not(:last-child) {
 .write-us,
 .modal-map,
 .add-to-basket {
-  display: none;
+  display: none; 
 }
 
 .modal-show {
@@ -2380,7 +2389,7 @@ fieldset.filter-item:not(:last-child) {
   position: fixed;
 }
 
-.modal.write-us {
+.write-us {
   width: 620px;
 
   background-color: #fff;
@@ -2401,7 +2410,7 @@ fieldset.filter-item:not(:last-child) {
   z-index: 25;
 }
 
-.modal-container {
+.write-us .modal-container {
   width: 460px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2420,6 +2429,7 @@ fieldset.filter-item:not(:last-child) {
   margin: 0;
   padding: 0;
   padding-top: 47px;
+  padding-bottom: 18px;
 }
 
 .modal-bottom {
@@ -2427,9 +2437,8 @@ fieldset.filter-item:not(:last-child) {
   margin: 0;
   padding: 0;
 }
-
-.modal-close {
-  /* кнопка закрытия модальных окон */
+/* кнопка закрытия модальных окон */
+.modal-close {  
   position: absolute;
   top: 10px;
   right: 10px;
@@ -2450,11 +2459,11 @@ fieldset.filter-item:not(:last-child) {
   content: "";
 
   position: absolute;
-  top: 10px;
-  left: 2px;
+  top: 7px;
+  left: 0px;
 
-  width: 19px;
-  height: 3px;
+  width: 27px;
+  height: 4px;
 
   background-color: #ee3643;
   z-index: 3;
@@ -2474,7 +2483,7 @@ fieldset.filter-item:not(:last-child) {
 
 .write-us p {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .write-us input[type="text"],
@@ -2483,11 +2492,15 @@ textarea {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  font-weight: normal;
   color: #000;
 
   text-decoration: none;
   font-weight: normal;
   text-transform: none;
+
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
 }
 
 .write-us input[type="text"],
@@ -2495,16 +2508,34 @@ textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 220px;
-  padding: 10px 15px;
-  margin: 12px 10px;
-  margin-left: 0;
+  padding: 7px 15px;
+  margin: 10px;
+  margin-left: 0px;
+  padding-bottom: 9px;
 }
 
 .write-us textarea {
   width: 460px;
-  padding: 12px 15px;
-  margin: 10px 0;
+  padding: 7px 15px;
+  padding-bottom: 14px;
+  margin: 10px 0px;
 }
+
+.write-us input[type="text"]:hover,
+.write-us input[type="email"]:hover,
+textarea:hover {
+  border: 2px solid #b5b5b5;
+}
+.write-us input[type="text"]:focus,
+.write-us input[type="email"]:focus,
+textarea:focus {
+  border: 2px solid #ee3643;
+}
+
+.write-us input[type="email"] {
+  margin-right: 0px;
+}
+
 
 .modal-bottom button {
   width: 100%;
@@ -2524,6 +2555,11 @@ textarea {
   background-color: #ee3643;
   border: 0;
   border-radius: 3px;
+}
+
+.write-us .button-red {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*Модальное окно с картой  */
@@ -2552,7 +2588,7 @@ textarea {
 }
 
 /* Модальное окно на странице каталога */
-.modal.add-to-basket {
+.add-to-basket {
   width: 620px;
 
   background-color: #fff;
@@ -2573,11 +2609,21 @@ textarea {
   line-height: 30px;
   font-weight: normal;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 3px;
 }
 
-.add-to-basket img {
-  margin-bottom: 48px;
+.add-to-basket img {  
   margin-right: 30px;
+  margin-top: 3px;
+  margin-left: 2px;
+}
+.add-to-basket .modal-top {
+  margin: 0;
+  padding: 0;
+  padding-top: 45px;
+  padding-bottom: 49px;
 }
 
 .add-to-basket .modal-bottom,
@@ -2589,6 +2635,8 @@ textarea {
 .add-to-basket .button-white {
   width: 220px;
   margin: 0;
+  padding-top: 11px;
+  padding-bottom: 9px;
 
   font-size: 14px;
   line-height: 18px;
@@ -2597,19 +2645,23 @@ textarea {
   text-transform: uppercase;
   vertical-align: middle;
 }
-
-.add-to-basket .button-white {
-  border-radius: 3px;
+.add-to-basket .button-red:hover,
+.add-to-basket .button-red:focus,
+.add-to-basket .button-red:active {
+  background-color: #ee3643;
 }
 
-.add-to-basket .modal-top .modal-container {
+.add-to-basket .button-white {
+  border-radius: 3px;  
+}
+
+.add-to-basket .top-d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+  
+  align-items: center;
 }
