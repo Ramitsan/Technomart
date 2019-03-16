@@ -117,6 +117,23 @@ img {
   background-repeat: no-repeat;
 }
 
+/* цвет плейсхолдера в форме поиска */
+.header-search::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.header-search:-ms-input-placeholder {
+  color: #fff;
+}
+
+.header-search::-ms-input-placeholder {
+  color: #fff;
+}
+
+.header-search::placeholder {
+  color: #fff;
+}
+
 .widgets {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,7 +281,7 @@ img {
   margin: 0;
   padding: 0;
   margin-left: 53px;
-  margin-top: -6px;
+  margin-top: -7px;
 }
 
 .header-contacts-catalog {
@@ -325,6 +342,7 @@ img {
   margin-top: -9px;
   position: relative;
 }
+
 .user-navigation-catalog .button-white {
   width: 300px;
   padding: 11px;
@@ -332,13 +350,13 @@ img {
   text-align: left;
   margin-bottom: 5px;
   padding-bottom: 8px;
-  background-color: #fff;  
+  background-color: #fff;
 }
 
 .auth-link {
   font-size: 21px;
   line-height: 21px;
-  font-style: none;
+  font-style: normal;
   text-align: left;
   font-weight: normal;
   color: #000;
@@ -453,13 +471,11 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
 
   width: 940px;
 
-  padding: 0 22px;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
 }
@@ -473,6 +489,7 @@ img {
   display: block;
   padding: 20px 30px;
   padding-bottom: 18px;
+  padding-left: 31px;
   margin: 0;
 
   vertical-align: middle;
@@ -504,7 +521,7 @@ img {
 
 .materials img {
   position: absolute;
-  right: 42px;
+  right: 43px;
   bottom: 27px;
 }
 
@@ -558,8 +575,8 @@ img {
   font-weight: bold;
   color: #fff;
   margin: 0;
-  padding-top: 21px;
-  padding-left: 23px;
+  padding-top: 20px;
+  padding-left: 22px;
 }
 
 .promo-link {
@@ -577,7 +594,7 @@ img {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 3px;
 
-  margin-top: 12px;
+  margin-top: 13px;
   margin-left: 23px;
 }
 
@@ -588,6 +605,11 @@ img {
 
 .promo-link:active {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.materials .promo-link,
+.tool .promo-link {
+  margin-left: 25px;
 }
 
 .promo-block1 {
@@ -657,7 +679,6 @@ img {
 }
 
 .footer-logo {
-
   width: 220px;
   padding: 0;
   margin: 0;
@@ -695,6 +716,7 @@ img {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -727,6 +749,7 @@ img {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -1098,7 +1121,7 @@ a.brands-button {
 a.company-button {
   width: 220px;
   padding-top: 8px;
-  padding-bottom: 6px;  
+  padding-bottom: 6px;
 }
 
 a.contacts-button {
@@ -1109,7 +1132,7 @@ a.contacts-button {
 }
 
 .section-title {
-  min-height: 89px;  
+  min-height: 89px;
   background-color: #f9f5f0;
   position: relative;
 }
@@ -1131,10 +1154,16 @@ a.contacts-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
-  
+
   margin: 0;
   margin-top: 20px;
   padding: 0;
@@ -1183,6 +1212,9 @@ a.contacts-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1239,6 +1271,19 @@ a.contacts-button {
   padding-top: 13px;
   padding-bottom: 55px;
 }
+
+.services-delivery .services-features {
+  padding-top: 13px;
+}
+
+.services-guarantee .services-features {
+  padding-top: 11px;
+}
+
+.services-credit .services-features {
+  padding-top: 11px;
+}
+
 .services-promotion {
   width: 400px;
 }
@@ -1287,6 +1332,7 @@ a.contacts-button {
   padding-left: 23px;
   padding-right: 140px;
   margin: 0;
+  cursor: pointer;
 
   border-top: 1px solid #405069;
   border-bottom: 1px solid #293449;
@@ -1346,7 +1392,7 @@ a.contacts-button {
 
 .services-delivery img {
   position: absolute;
-  top: -199px;
+  top: -163px;
   right: 1px;
 }
 
@@ -1363,7 +1409,7 @@ a.contacts-button {
 
 .services-guarantee img {
   position: absolute;
-  bottom: -98px;
+  bottom: -97px;
   right: -8px;
 }
 
@@ -1374,13 +1420,13 @@ a.contacts-button {
 .services-credit div {
   max-width: 380px;
   position: absolute;
-  top: -224px;
+  top: -226px;
   left: 321px;
 }
 
 .services-credit img {
   position: absolute;
-  bottom: -98px;
+  bottom: -96px;
   right: -10px;
 }
 
@@ -1421,10 +1467,12 @@ a.contacts-button {
   padding-bottom: 11px;
 
 }
+
 .about1 {
   width: 520px;
   padding-top: 1px;
 }
+
 .about2 {
   width: 390px;
 }
@@ -1498,13 +1546,10 @@ a.contacts-button {
   margin-bottom: 31px;
 }
 
-
-
-
 .map {
   width: 300px;
   height: 158px;
-  background-color: #eeeae3; 
+  background-color: #eeeae3;
   margin-bottom: 40px;
 }
 
@@ -1573,6 +1618,7 @@ a.contacts-button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -1868,13 +1914,14 @@ fieldset.filter-item:not(:last-child) {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 .filter-input-radio+label:hover::before,
 .filter-input-radio+label:focus::before {
-   background-image: url("../img/radio-off-focus.svg");
+  background-image: url("../img/radio-off-focus.svg");
 }
 
 .filter-input-radio:checked+label::before {
-    content: "";
+  content: "";
 
   position: absolute;
   left: -35px;
@@ -1890,7 +1937,7 @@ fieldset.filter-item:not(:last-child) {
 
 .filter-input-radio:checked+label:hover::before,
 .filter-input-radio:checked+label:focus::before {
-   background-image: url("../img/radio-on-focus.svg");
+  background-image: url("../img/radio-on-focus.svg");
 }
 
 /* блокированные чекбоксы и радио-кнопки */
@@ -1922,7 +1969,7 @@ fieldset.filter-item:not(:last-child) {
   margin-left: auto;
 }
 
-.catalog-items {  
+.catalog-items {
   margin: 10px auto;
   font-size: 0;
 }
@@ -2031,14 +2078,14 @@ fieldset.filter-item:not(:last-child) {
 
 .catalog-item .actions,
 .popular-item .actions {
-  display: none; 
+  display: none;
 }
 
 .catalog-item:hover .actions,
 .popular-item:hover .actions,
 .catalog-item:focus .actions,
 .popular-item:focus .actions {
-  display: block;  
+  display: block;
 }
 
 /* Кнопка "Купить" при наведении */
@@ -2161,6 +2208,7 @@ fieldset.filter-item:not(:last-child) {
   top: 50%;
   padding: 0 24px;
   margin-top: -10px;
+  cursor: pointer;
 }
 
 .slider-controls::before {
@@ -2189,6 +2237,36 @@ fieldset.filter-item:not(:last-child) {
   background-image: url("../img/icon-right.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.slider-controls-round {
+  width: 32px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 36px;
+  right: 293px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+}
+
+.slider-controls-round span {
+  width: 10px;
+  height: 10px;
+  padding: 3px;
+  margin-right: 10px;
+
+  background-color: #fff;
+  border: 2px solid #fff;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls-round .active {
+  background-color: #ee3643;
 }
 
 .slider-content {
@@ -2306,7 +2384,7 @@ fieldset.filter-item:not(:last-child) {
 .write-us,
 .modal-map,
 .add-to-basket {
-  display: none; 
+  display: none;
 }
 
 .modal-show {
@@ -2475,8 +2553,9 @@ fieldset.filter-item:not(:last-child) {
   margin: 0;
   padding: 0;
 }
+
 /* кнопка закрытия модальных окон */
-.modal-close {  
+.modal-close {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -2564,6 +2643,7 @@ fieldset.filter-item:not(:last-child) {
 .write-us textarea:hover {
   border: 2px solid #b5b5b5;
 }
+
 .write-us input[type="text"]:focus,
 .write-us input[type="email"]:focus,
 .write-us textarea:focus {
@@ -2573,7 +2653,6 @@ fieldset.filter-item:not(:last-child) {
 .write-us input[type="email"] {
   margin-right: 0px;
 }
-
 
 .modal-bottom button {
   width: 100%;
@@ -2652,11 +2731,12 @@ fieldset.filter-item:not(:last-child) {
   margin-left: 3px;
 }
 
-.add-to-basket img {  
+.add-to-basket img {
   margin-right: 30px;
   margin-top: 3px;
   margin-left: 2px;
 }
+
 .add-to-basket .modal-top {
   margin: 0;
   padding: 0;
@@ -2683,6 +2763,7 @@ fieldset.filter-item:not(:last-child) {
   text-transform: uppercase;
   vertical-align: middle;
 }
+
 .add-to-basket .button-red:hover,
 .add-to-basket .button-red:focus,
 .add-to-basket .button-red:active {
@@ -2690,7 +2771,7 @@ fieldset.filter-item:not(:last-child) {
 }
 
 .add-to-basket .button-white {
-  border-radius: 3px;  
+  border-radius: 3px;
 }
 
 .add-to-basket .top-d-flex {
@@ -2700,6 +2781,9 @@ fieldset.filter-item:not(:last-child) {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
+
