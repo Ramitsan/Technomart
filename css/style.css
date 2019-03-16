@@ -129,18 +129,18 @@ img {
   position: relative;
 }
 
-.bookmark,
+.bookmark-header,
 .cart {
   width: 150px;
   padding: 13px 27px;
 }
 
-.bookmark a,
+.bookmark-header a,
 .cart a {
   color: #fff;
 }
 
-.bookmark::before {
+.bookmark-header::before {
   content: "";
 
   position: absolute;
@@ -156,14 +156,14 @@ img {
   opacity: 0.3;
 }
 
-.bookmark:hover::before,
-.bookmark:focus::before,
+.bookmark-header:hover::before,
+.bookmark-header:focus::before,
 .cart:hover::before,
 .cart:focus::before {
   opacity: 1;
 }
 
-.bookmark:active::before,
+.bookmark-header:active::before,
 .cart:active::before {
   opacity: 0.5;
 }
@@ -188,12 +188,12 @@ img {
   opacity: 0.3;
 }
 
-.bookmark:hover,
+.bookmark-header:hover,
 .cart-null:hover {
   background-color: #212a3a;
 }
 
-.bookmark:active,
+.bookmark-header:active,
 .cart-null:active {
   background-color: #161d29;
   color: #fff;
@@ -1109,7 +1109,7 @@ a.contacts-button {
 }
 
 .section-title {
-  min-height: 89px;
+  min-height: 89px;  
   background-color: #f9f5f0;
   position: relative;
 }
@@ -1123,19 +1123,21 @@ a.contacts-button {
   padding: 29px 0;
   padding-left: 28px;
   margin-top: 0;
+
+  max-width: 630px;
 }
 
 .popular-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  
   margin: 0;
   margin-top: 20px;
   padding: 0;
-  flex-wrap: wrap;
 }
 
 .popular-item {
@@ -1181,9 +1183,7 @@ a.contacts-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
@@ -1206,6 +1206,7 @@ a.contacts-button {
   background-color: #fff;
   text-align: center;
   margin-top: 20px;
+  margin-right: 20px;
 }
 
 .services {
@@ -1345,7 +1346,7 @@ a.contacts-button {
 
 .services-delivery img {
   position: absolute;
-  bottom: -98px;
+  top: -199px;
   right: 1px;
 }
 
@@ -1811,9 +1812,10 @@ fieldset.filter-item:not(:last-child) {
   color: #000;
 }
 
-/* стилизация чекбоксов и радиокнопок */
+/* стилизация чекбоксов */
 .filter-input-checkbox+label::before {
   content: "";
+
   position: absolute;
   left: -35px;
   top: -3px;
@@ -1821,17 +1823,24 @@ fieldset.filter-item:not(:last-child) {
   width: 23px;
   height: 23px;
 
-  border: 2px solid #c5c5c5;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.filter-input-checkbox:checked+label::after {
+.filter-input-checkbox+label:hover::before,
+.filter-input-checkbox+label:focus::before {
+  background-image: url("../img/checkbox-off-focus.svg");
+}
+
+.filter-input-checkbox:checked+label::before {
   content: "";
 
   position: absolute;
   left: -35px;
   top: -3px;
 
-  width: 23px;
+  width: 27px;
   height: 23px;
 
   background-image: url("../img/checkbox-on.svg");
@@ -1839,6 +1848,12 @@ fieldset.filter-item:not(:last-child) {
   background-position: 0 0;
 }
 
+.filter-input-checkbox:checked+label:hover::before,
+.filter-input-checkbox:checked+label:focus::before {
+  background-image: url("../img/checkbox-on-focus.svg");
+}
+
+/* стилизация радио-кнопок */
 .filter-input-radio+label::before {
   content: "";
 
@@ -1849,29 +1864,36 @@ fieldset.filter-item:not(:last-child) {
   width: 25px;
   height: 25px;
 
-  border: 3px solid #b5b5b5;
-  border-radius: 50%;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.filter-input-radio+label:hover::before,
+.filter-input-radio+label:focus::before {
+   background-image: url("../img/radio-off-focus.svg");
 }
 
-.filter-input-radio:checked+label::after {
-  content: "";
+.filter-input-radio:checked+label::before {
+    content: "";
 
   position: absolute;
-  top: 5px;
-  left: -26px;
+  left: -35px;
+  top: -3px;
 
-  width: 8px;
-  height: 8px;
+  width: 25px;
+  height: 25px;
 
-  background-color: #c5c5c5;
-  border-radius: 50%;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.filter-input:hover+label,
-.filter-input:focus+label {
-  color: #b5b5b5;
+.filter-input-radio:checked+label:hover::before,
+.filter-input-radio:checked+label:focus::before {
+   background-image: url("../img/radio-on-focus.svg");
 }
 
+/* блокированные чекбоксы и радио-кнопки */
 .filter-input:disabled+label {
   color: #b5b5b5;
   opacity: 0.3;
@@ -1923,7 +1945,8 @@ fieldset.filter-item:not(:last-child) {
 }
 
 .catalog-item:nth-child(3n),
-.popular-item:nth-child(4n) {
+.popular-item:nth-child(4n),
+.brand:nth-child(4n) {
   margin-right: 0;
 }
 
