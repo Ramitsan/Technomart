@@ -2526,6 +2526,15 @@ fieldset.filter-item:not(:last-child) {
   z-index: 25;
 }
 
+.write-us input {
+  display: block;
+  outline: none;
+}
+
+.write-us textarea {
+ outline: none;
+}
+
 .write-us .modal-container {
   width: 460px;
   display: -webkit-box;
