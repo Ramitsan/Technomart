@@ -78,3 +78,4 @@ mapClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   mapPopup.classList.remove("modal-show");
 });
+
