@@ -1,4 +1,4 @@
-#Проект «Техномарт»
+# Проект «Техномарт»
 
 Студент: [Ирина Рамицан](https://up.htmlacademy.ru/htmlcss/24/user/877447).<br>
 Наставник: [Алексей Зольников](https://htmlacademy.ru/profile/id870391).
