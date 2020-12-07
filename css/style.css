@@ -2425,6 +2425,7 @@ fieldset.filter-item:not(:last-child) {
 
 .modal {
   position: fixed;
+  z-index: 100;
 }
 
 .write-us {
@@ -2442,7 +2443,6 @@ fieldset.filter-item:not(:last-child) {
   line-height: 18px;
   font-weight: normal;
   text-decoration: none;
-  z-index: 25;
 }
 
 .write-us .modal-container {
