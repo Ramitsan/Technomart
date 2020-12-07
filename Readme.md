@@ -15,7 +15,7 @@
 - Accessibility - доступность всех интерактивных элементов с клавиатуры,
 - Pixel Perfect.
 
-GitHub Pages: https://ramitsan.github.io/877447-technomart-24/
+GitHub Pages: https://ramitsan.github.io/Technomart/
 
 ---
 
