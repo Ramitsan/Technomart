@@ -79,3 +79,68 @@ mapClose.addEventListener("click", function(evt) {
   mapPopup.classList.remove("modal-show");
 });
 
+
+// переключатель табов в блоке "Сервисы"
+var servicesItem = document.querySelectorAll('.services-item');
+var servicesItemDelivery = document.querySelector('.services-item--delivery');
+var servicesItemGuarantee = document.querySelector('.services-item--guarantee');
+var servicesItemCredit = document.querySelector('.services-item--credit');
+
+var servicesDelivery = document.querySelector('.services-delivery');
+var servicesGuarantee = document.querySelector('.services-guarantee');
+var servicesCredit = document.querySelector('.services-credit');
+
+
+var removeActiveHandler = function() {  
+  for (var i=0; i < servicesItem.length; i++) {
+    servicesItem[i].classList.remove('active');
+  }
+}
+
+var visuallyHidddenHandler = function () {
+  var servicesBlock = document.querySelectorAll(".services-block");
+  for (var j = 0; j < servicesBlock.length; j++) {
+    servicesBlock[j].classList.add("visually-hidden");
+  }
+}
+
+var tabClickHandler = function(item, it) {
+  item.classList.add('active');
+  it.classList.remove('visually-hidden');
+};
+
+servicesItemDelivery.addEventListener('click', function() {
+  removeActiveHandler();
+  visuallyHidddenHandler();
+  tabClickHandler(servicesItemDelivery, servicesDelivery);   
+});
+
+servicesItemGuarantee.addEventListener('click', function() {  
+  removeActiveHandler();
+  visuallyHidddenHandler();
+  tabClickHandler(servicesItemGuarantee, servicesGuarantee);  
+});
+
+servicesItemCredit.addEventListener('click', function() {   
+  removeActiveHandler();
+  visuallyHidddenHandler();
+  tabClickHandler(servicesItemCredit, servicesCredit);  
+});
+
+
+
+// var zzz = function() {  
+//   servicesItem.forEach("click", function(evt) {
+//     removeActiveHandler();
+//     visuallyHidddenHandler();
+//     if (evt.target === servicesItemDelivery) {
+//       tabClickHandler(servicesItemDelivery, servicesDelivery);
+//     } else if (evt.target === servicesItemGuarantee) {
+//       tabClickHandler(servicesItemGuarantee, servicesGuarantee);
+//     } else if (evt.target === servicesItemCredit) {
+//       tabClickHandler(servicesItemCredit, servicesCredit); 
+//     }
+//  });
+// }
+
+

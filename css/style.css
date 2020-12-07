@@ -10,12 +10,10 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #000;
-
   background-color: #fff;
 }
 
@@ -86,13 +84,11 @@ img {
   height: 43px;
   border: none;
   color: #fff;
-
   padding-left: 48px;
   padding-right: 5px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #293449;
-
   background-image: url("../img/icon-search.svg");
   background-position: 18px 50%;
   background-repeat: no-repeat;
@@ -101,7 +97,6 @@ img {
 .header-search:hover {
   color: #fff;
   background-color: #212a3a;
-
   background-image: url("../img/icon-search-hover.svg");
   background-position: 18px 50%;
   background-repeat: no-repeat;
@@ -111,13 +106,14 @@ img {
 .header-search:active {
   color: #000;
   background-color: #fff;
-
   background-image: url("../img/icon-search-active.svg");
   background-position: 18px 50%;
   background-repeat: no-repeat;
 }
 
+
 /* цвет плейсхолдера в форме поиска */
+
 .header-search::-webkit-input-placeholder {
   color: #fff;
 }
@@ -159,14 +155,11 @@ img {
 
 .bookmark-header::before {
   content: "";
-
   position: absolute;
   top: 13px;
   left: 287px;
-
   width: 14px;
   height: 16px;
-
   background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -191,14 +184,11 @@ img {
 
 .cart::before {
   content: "";
-
   position: absolute;
   top: 13px;
   left: 438px;
-
   width: 15px;
   height: 15px;
-
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -314,15 +304,12 @@ img {
 
 .header-phone::before {
   content: "";
-
   position: absolute;
   top: 2px;
   left: 9px;
-
   width: 19px;
   height: 19px;
   padding-left: 10px;
-
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -364,14 +351,11 @@ img {
 
 .auth-link::before {
   content: "";
-
   position: absolute;
   top: 13px;
   right: 266px;
-
   width: 20px;
   height: 18px;
-
   background-image: url("../img/icon-user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -388,14 +372,11 @@ img {
 
 .logout::after {
   content: "";
-
   position: absolute;
   top: 14px;
   right: 11px;
-
   width: 20px;
   height: 18px;
-
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -442,14 +423,11 @@ img {
 
 .user-orders::after {
   content: "";
-
   position: absolute;
   top: 59px;
   right: 188px;
-
   width: 4px;
   height: 5px;
-
   background-image: url("../img/point.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -473,9 +451,7 @@ img {
   flex-wrap: wrap;
   padding-left: 20px;
   padding-right: 20px;
-
   width: 940px;
-
   background-color: #32425c;
   border-bottom: 5px solid #293449;
 }
@@ -491,9 +467,7 @@ img {
   padding-bottom: 18px;
   padding-left: 31px;
   margin: 0;
-
   vertical-align: middle;
-
   font-size: 17px;
   line-height: 17px;
   color: #fff;
@@ -590,10 +564,8 @@ img {
   text-align: center;
   padding-top: 11px;
   padding-bottom: 12px;
-
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-
   margin-top: 13px;
   margin-left: 23px;
 }
@@ -781,7 +753,6 @@ img {
   padding: 0;
   margin: 0;
   padding-right: 68px;
-
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
@@ -807,7 +778,6 @@ img {
   position: absolute;
   right: -147px;
   top: -2px;
-
   margin: 0 auto;
   padding: 0;
 }
@@ -897,7 +867,6 @@ img {
   -ms-flex-wrap: wrap;
   margin: 0;
   padding: 0;
-
   font-size: 16px;
   line-height: 18px;
   color: #fff;
@@ -956,14 +925,11 @@ img {
 
 .breadcrumbs li::after {
   content: "";
-
   position: absolute;
   top: 5px;
   right: -25px;
-
   width: 8px;
   height: 12px;
-
   background-image: url("../img/icon-right-small.svg");
 }
 
@@ -1006,10 +972,8 @@ a.button {
   display: inline-block;
   color: #fff;
   font-size: 14px;
-
   text-align: center;
   vertical-align: middle;
-
   padding: 7px 10px;
 }
 
@@ -1032,7 +996,6 @@ a.button-green {
   max-width: 150px;
   height: 100%;
   background-color: #63a63e;
-
   font-size: 17px;
   line-height: 18px;
   color: #fff;
@@ -1146,7 +1109,6 @@ a.contacts-button {
   padding: 29px 0;
   padding-left: 28px;
   margin-top: 0;
-
   max-width: 630px;
 }
 
@@ -1163,7 +1125,6 @@ a.contacts-button {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-
   margin: 0;
   margin-top: 20px;
   padding: 0;
@@ -1299,14 +1260,11 @@ a.contacts-button {
 
 .services-items::after {
   content: "";
-
   position: absolute;
   top: -40px;
   left: 231px;
-
   width: 10px;
   height: 272px;
-
   background-image: url("../img/menu-shadow.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1320,20 +1278,17 @@ a.contacts-button {
 .services-items span {
   display: block;
   width: 100%;
-
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
   color: #fff;
   text-align: left;
-
   padding-top: 14px;
   padding-bottom: 17px;
   padding-left: 23px;
   padding-right: 140px;
   margin: 0;
   cursor: pointer;
-
   border-top: 1px solid #405069;
   border-bottom: 1px solid #293449;
 }
@@ -1465,7 +1420,6 @@ a.contacts-button {
 
 .about p {
   padding-bottom: 11px;
-
 }
 
 .about1 {
@@ -1497,14 +1451,11 @@ a.contacts-button {
 
 .transport-company li:nth-child(1)::before {
   content: "";
-
   position: absolute;
   top: 9px;
   left: 0px;
-
   width: 25px;
   height: 2px;
-
   background-image: url("../img/red-line.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1512,14 +1463,11 @@ a.contacts-button {
 
 .transport-company li:nth-child(2)::before {
   content: "";
-
   position: absolute;
   top: 49px;
   left: 0px;
-
   width: 25px;
   height: 2px;
-
   background-image: url("../img/red-line.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1527,14 +1475,11 @@ a.contacts-button {
 
 .transport-company li:nth-child(3)::before {
   content: "";
-
   position: absolute;
   top: 88px;
   left: 0px;
-
   width: 25px;
   height: 2px;
-
   background-image: url("../img/red-line.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1553,7 +1498,9 @@ a.contacts-button {
   margin-bottom: 40px;
 }
 
+
 /* Стили Каталога */
+
 .info {
   background-color: #f2f6f8;
   padding-top: 40px;
@@ -1645,7 +1592,9 @@ a.contacts-button {
   fill: #ee3643;
 }
 
+
 /*-- Форма в фильтре--*/
+
 .filters {
   width: 220px;
   margin-left: 0;
@@ -1740,7 +1689,6 @@ fieldset.filter-item:not(:last-child) {
   padding-right: 20px;
   padding-left: 20px;
   background-color: #f7f3ec;
-
   border-radius: 5px;
 }
 
@@ -1759,11 +1707,9 @@ fieldset.filter-item:not(:last-child) {
   position: absolute;
   top: 31px;
   left: 0;
-
   width: 4px;
   height: 4px;
   padding: 0;
-
   border: 8px solid #ffffff;
   background-color: #ababab;
   -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -1803,7 +1749,6 @@ fieldset.filter-item:not(:last-child) {
   width: 95px;
   padding: 8px 23px;
   padding-bottom: 11px;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -1811,7 +1756,6 @@ fieldset.filter-item:not(:last-child) {
   text-align: center;
   text-transform: uppercase;
   color: #000;
-
   border: none;
   border-radius: 5px;
   background: #f7f3ec;
@@ -1819,7 +1763,6 @@ fieldset.filter-item:not(:last-child) {
 
 .min-price::after {
   content: "—";
-
   position: absolute;
   top: 6px;
   left: 106px;
@@ -1828,7 +1771,6 @@ fieldset.filter-item:not(:last-child) {
 .filter ul {
   padding: 0;
   margin: 0;
-
   list-style: none;
   line-height: 20px;
 }
@@ -1843,13 +1785,11 @@ fieldset.filter-item:not(:last-child) {
 
 .filter-option label {
   position: relative;
-
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
@@ -1858,17 +1798,16 @@ fieldset.filter-item:not(:last-child) {
   color: #000;
 }
 
+
 /* стилизация чекбоксов */
+
 .filter-input-checkbox+label::before {
   content: "";
-
   position: absolute;
   left: -35px;
   top: -3px;
-
   width: 23px;
   height: 23px;
-
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1881,14 +1820,11 @@ fieldset.filter-item:not(:last-child) {
 
 .filter-input-checkbox:checked+label::before {
   content: "";
-
   position: absolute;
   left: -35px;
   top: -3px;
-
   width: 27px;
   height: 23px;
-
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1899,17 +1835,16 @@ fieldset.filter-item:not(:last-child) {
   background-image: url("../img/checkbox-on-focus.svg");
 }
 
+
 /* стилизация радио-кнопок */
+
 .filter-input-radio+label::before {
   content: "";
-
   position: absolute;
   left: -35px;
   top: -3px;
-
   width: 25px;
   height: 25px;
-
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1922,14 +1857,11 @@ fieldset.filter-item:not(:last-child) {
 
 .filter-input-radio:checked+label::before {
   content: "";
-
   position: absolute;
   left: -35px;
   top: -3px;
-
   width: 25px;
   height: 25px;
-
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1940,13 +1872,17 @@ fieldset.filter-item:not(:last-child) {
   background-image: url("../img/radio-on-focus.svg");
 }
 
+
 /* блокированные чекбоксы и радио-кнопки */
+
 .filter-input:disabled+label {
   color: #b5b5b5;
   opacity: 0.3;
 }
 
+
 /*Каталог товары */
+
 .catalog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1960,7 +1896,6 @@ fieldset.filter-item:not(:last-child) {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-
   margin-top: 9px;
 }
 
@@ -1981,12 +1916,10 @@ fieldset.filter-item:not(:last-child) {
   width: 220px;
   margin-right: 20px;
   margin-bottom: 22px;
-
   font-size: 16px;
   line-height: 20px;
   font-weight: bold;
   text-align: center;
-
   border: 1px solid #ccc;
   vertical-align: middle;
 }
@@ -2003,10 +1936,8 @@ fieldset.filter-item:not(:last-child) {
   position: absolute;
   top: -1px;
   right: -1px;
-
   width: 60px;
   height: 60px;
-
   text-indent: -1000px;
   overflow: hidden;
   z-index: 20;
@@ -2024,12 +1955,16 @@ fieldset.filter-item:not(:last-child) {
   background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
+
 /* в каталоге скрываем флажок NEW у всех товаров, кроме 3, 5, 7-го  */
+
 .catalog-item:not(:nth-child(3)):not(:nth-child(5)):not(:nth-child(7)) .flag-new {
   display: none;
 }
 
+
 /* на главной скрываем флажок NEW у всех товаров, кроме 4-го  */
+
 .popular-item:not(:nth-child(4)) .flag-new {
   display: none;
 }
@@ -2039,11 +1974,9 @@ fieldset.filter-item:not(:last-child) {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 216px;
   height: 50%;
   padding: 44px 0;
-
   background-color: rgba(255, 255, 255, 1);
   z-index: 10;
 }
@@ -2055,12 +1988,10 @@ fieldset.filter-item:not(:last-child) {
   margin: 0 auto;
   margin-bottom: 7px;
   padding: 7px 0;
-
   background-color: #63a63e;
   border: 3px solid #63a63e;
   border-bottom-color: #367315;
   border-radius: 3px;
-
   color: white;
   font-size: 14px;
   font-weight: normal;
@@ -2088,7 +2019,9 @@ fieldset.filter-item:not(:last-child) {
   display: block;
 }
 
+
 /* Кнопка "Купить" при наведении */
+
 .actions .buy:hover,
 .actions .buy:focus {
   background-color: #5fbb2d;
@@ -2096,13 +2029,17 @@ fieldset.filter-item:not(:last-child) {
   border-bottom-color: #367315;
 }
 
+
 /* Кнопка "Купить" при клике */
+
 .actions .buy:active {
   background-color: #518534;
   border: 3px solid #518534;
 }
 
+
 /* Кнопка "В закладки" при наведении */
+
 .actions .bookmark:hover,
 .actions .bookmark:focus {
   color: #32425c;
@@ -2110,7 +2047,9 @@ fieldset.filter-item:not(:last-child) {
   border-color: #32425c;
 }
 
+
 /* Кнопка "В закладки" при клике */
+
 .actions .bookmark:active {
   color: #32425c;
   background: white;
@@ -2131,7 +2070,6 @@ fieldset.filter-item:not(:last-child) {
   padding: 0 25px;
   margin-top: 6px;
   margin-bottom: 10px;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
@@ -2143,7 +2081,6 @@ fieldset.filter-item:not(:last-child) {
   min-height: 20px;
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -2159,7 +2096,6 @@ fieldset.filter-item:not(:last-child) {
   margin-bottom: 18px;
   margin-left: 42px;
   padding: 11px 30px;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -2171,19 +2107,18 @@ fieldset.filter-item:not(:last-child) {
 
 .super-price:after {
   content: "";
-
   position: absolute;
   top: 0;
   right: -20px;
-
   width: 0;
   height: 0;
-
   border: 20px solid white;
   border-left-color: #ee3643;
 }
 
+
 /*  Слайдер */
+
 .slider {
   width: 620px;
   height: 266px;
@@ -2216,10 +2151,8 @@ fieldset.filter-item:not(:last-child) {
   position: absolute;
   top: -9px;
   left: 24px;
-
   width: 22px;
   height: 40px;
-
   background-image: url("../img/icon-left.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2230,10 +2163,8 @@ fieldset.filter-item:not(:last-child) {
   position: absolute;
   top: -9px;
   right: 20px;
-
   width: 22px;
   height: 40px;
-
   background-image: url("../img/icon-right.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2257,10 +2188,8 @@ fieldset.filter-item:not(:last-child) {
   height: 10px;
   padding: 3px;
   margin-right: 10px;
-
   background-color: #fff;
   border: 2px solid #fff;
-
   border-radius: 50%;
   cursor: pointer;
 }
@@ -2321,7 +2250,9 @@ fieldset.filter-item:not(:last-child) {
   display: none;
 }
 
+
 /*  Пагинация  */
+
 .pagination {
   width: 285px;
   margin: auto;
@@ -2343,7 +2274,6 @@ fieldset.filter-item:not(:last-child) {
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   margin-right: 7px;
-
   text-align: center;
   vertical-align: middle;
   font-family: "PT Sans", Arial, sans-serif;
@@ -2380,7 +2310,9 @@ fieldset.filter-item:not(:last-child) {
   border: 2px solid #ee3643;
 }
 
+
 /*  Модальные окна*/
+
 .write-us,
 .modal-map,
 .add-to-basket {
@@ -2393,7 +2325,9 @@ fieldset.filter-item:not(:last-child) {
   animation: bounce 0.6s;
 }
 
+
 /* Анимация при открытии модального окна */
+
 .modal-show {
   display: block;
   -webkit-animation: bounce 0.6s;
@@ -2405,17 +2339,14 @@ fieldset.filter-item:not(:last-child) {
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
-
   70% {
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
-
   90% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
-
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -2427,17 +2358,14 @@ fieldset.filter-item:not(:last-child) {
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
-
   70% {
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
-
   90% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
-
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -2450,13 +2378,11 @@ fieldset.filter-item:not(:last-child) {
 }
 
 @-webkit-keyframes shake {
-
   0%,
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-
   10%,
   30%,
   50%,
@@ -2465,7 +2391,6 @@ fieldset.filter-item:not(:last-child) {
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
-
   20%,
   40%,
   60%,
@@ -2476,13 +2401,11 @@ fieldset.filter-item:not(:last-child) {
 }
 
 @keyframes shake {
-
   0%,
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-
   10%,
   30%,
   50%,
@@ -2491,7 +2414,6 @@ fieldset.filter-item:not(:last-child) {
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
-
   20%,
   40%,
   60%,
@@ -2507,22 +2429,19 @@ fieldset.filter-item:not(:last-child) {
 
 .write-us {
   width: 620px;
-
   background-color: #fff;
   border-top: 7px solid #ff5257;
   -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-
-  top: 300px;
-  left: 25%;
-
+  top: 200px;
+  left: 50%;
+  margin-left: -310px;
   color: #000000;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: normal;
   text-decoration: none;
-
   z-index: 25;
 }
 
@@ -2536,7 +2455,6 @@ fieldset.filter-item:not(:last-child) {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-
   margin: 0 auto;
 }
 
@@ -2554,15 +2472,15 @@ fieldset.filter-item:not(:last-child) {
   padding: 0;
 }
 
+
 /* кнопка закрытия модальных окон */
+
 .modal-close {
   position: absolute;
   top: 10px;
   right: 10px;
-
   width: 22px;
   height: 22px;
-
   font-size: 0;
   border: 0;
   cursor: pointer;
@@ -2570,18 +2488,17 @@ fieldset.filter-item:not(:last-child) {
   z-index: 2;
 }
 
+
 /* "крестик" на кнопке закрытия */
+
 .modal-close::before,
 .modal-close::after {
   content: "";
-
   position: absolute;
   top: 7px;
   left: 0px;
-
   width: 27px;
   height: 4px;
-
   background-color: #ee3643;
   z-index: 3;
 }
@@ -2611,11 +2528,9 @@ fieldset.filter-item:not(:last-child) {
   line-height: 18px;
   font-weight: normal;
   color: #000;
-
   text-decoration: none;
   font-weight: normal;
   text-transform: none;
-
   border: 2px solid #d7dcde;
   border-radius: 3px;
   outline: 0;
@@ -2665,10 +2580,8 @@ fieldset.filter-item:not(:last-child) {
   color: #fff;
   font-size: 14px;
   line-height: 18px;
-
   text-align: center;
   vertical-align: middle;
-
   padding: 7px 10px;
   text-transform: uppercase;
   background-color: #ee3643;
@@ -2681,11 +2594,12 @@ fieldset.filter-item:not(:last-child) {
   padding-bottom: 10px;
 }
 
+
 /*Модальное окно с картой  */
+
 .modal-map {
   top: 50%;
   left: 50%;
-
   width: 940px;
   height: 448px;
   margin-top: -280px;
@@ -2702,22 +2616,20 @@ fieldset.filter-item:not(:last-child) {
 .modal-map iframe {
   position: relative;
   z-index: 2;
-
   border: none;
 }
 
+
 /* Модальное окно на странице каталога */
+
 .add-to-basket {
   width: 620px;
-
   background-color: #fff;
   border-top: 7px solid #ff5257;
   -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-
   top: 300px;
   left: 25%;
-
   z-index: 21;
 }
 
@@ -2757,7 +2669,6 @@ fieldset.filter-item:not(:last-child) {
   margin: 0;
   padding-top: 11px;
   padding-bottom: 9px;
-
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -2783,7 +2694,6 @@ fieldset.filter-item:not(:last-child) {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
