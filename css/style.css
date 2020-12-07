@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 *,
 *::before,
 *::after {
@@ -123,6 +130,10 @@ img {
 }
 
 .header-search::-ms-input-placeholder {
+  color: #fff;
+}
+
+.header-search::-moz-placeholder {
   color: #fff;
 }
 
@@ -449,8 +460,8 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   width: 940px;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
