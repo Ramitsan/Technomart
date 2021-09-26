@@ -1,5 +1,8 @@
 # Проект «Техномарт»
 
+![Technomart](https://user-images.githubusercontent.com/45296707/134824378-af296eaa-3632-4820-bfa6-fef7ebfb8f22.jpg)
+
+
 Студент: [Ирина Рамицан](https://up.htmlacademy.ru/htmlcss/24/user/877447).<br>
 Наставник: [Алексей Зольников](https://htmlacademy.ru/profile/id870391).
 
